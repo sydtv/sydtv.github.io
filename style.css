@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.pic1{
+    background-image: url("splash.jpg");
+    width: auto;
+    height: 100%;
+    background-size: cover;
+}
+/*.pic2{
+    background-image: url("sea.jpg");
+    width: auto;
+    height: 100%;
+    background-size: cover;
+}*/
+.pic3{
+    background-image: url("pic3.5.jpg");
+    width: auto;
+    height: 100%;
+    background-size: cover;
+}
+.pic4{
+    background-image: url("pic4.5.jpg");
+    width: auto;
+    height: 100%;
+    background-size: cover;
+}
+.section{
+    background-position: center center;
+}
+.bg{
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    float: left;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+.title{
+    z-index: 2;
+    position: relative;
+    font-size: 6rem;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    top: 50%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+}
+.big_first{
+    margin: 0 auto;
+    background-color: white;
+}
+.bglayer{
+    max-height: 70vh;
+    background-color: white;
+}
+#ud_slider{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#ud_slider .ud_slider{
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+#ud_slider .ud_slider_1{
+    background: url("slide1.jpg") center center;
+}
+#ud_slider .ud_slider_2{
+    background: url("slide2.jpg") center center;
+}
+#ud_slider .ud_slider h2{
+    color: white;
+    margin: 0;
+    padding: 10px;
+    background: black;
+    position: absolute;
+    bottom: 110px;
+    left: -60px;
+    font-size: 25pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+#ud_slider .ud_slider h3{
+    color: black;
+    margin: 0;
+    padding: 10px;
+    background: white;
+    position: absolute;
+    bottom: 60px;
+    left: -80px;
+    font-size: 20pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}

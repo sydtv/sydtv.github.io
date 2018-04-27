@@ -1,0 +1,11 @@
+html{
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content{
+    background-color: white;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,409 @@
+/*------------------------------------------------*/
+/*---------------------GENERAL--------------------*/
+/*------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+/*------------------------------------------------*/
+/*---------------------HEADER---------------------*/
+/*------------------------------------------------*/
+.header .navbar-top {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 9999;
+    background-color: #303030;
+    -webkit-box-shadow: -8px -5px 15px 15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px -5px 15px 15px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px -5px 15px 15px rgba(0, 0, 0, 0.75);
+}
+
+.header .desknav {
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: -10px;
+}
+
+.header .desknav ul li {
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+}
+
+.header ul li a:hover {
+    color: #FF7200;
+}
+
+.desknav {
+    display: block;
+}
+
+.mobnav,
+.sitenav {
+    display: none;
+}
+.sitenav{
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    background-color: #303030;
+    width: 100%;
+    z-index: 2;
+}
+.sitenav--open{
+    top: 100px;
+}
+.sitenav ul li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.menu-toggle {
+    padding: 40px;
+    position: absolute;
+    right: -15px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.cheesy,
+.cheesy::before,
+.cheesy::after {
+    content: '';
+    display: block;
+    background: white;
+    height: 3px;
+    width: 4em;
+    border-radius: 3px;
+    transition: all 500ms;
+}
+
+.cheesy::before {
+    transform: translateY(-21px);
+}
+
+.cheesy::after {
+    transform: translateY(20px);
+}
+
+.open .cheesy {
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.open .cheesy::after {
+    -webkit-transform: rotate(90deg) translateY(-1px) translateX(-5px);
+    -moz-transform: rotate(90deg) translateY(-1px) translateX(-5px);
+    -ms-transform: rotate(90deg) translateY(-1px) translateX(-5px);
+    -o-transform: rotate(90deg) translateY(-1px) translateX(-5px);
+    transform: rotate(90deg) translateY(-1px) translateX(-5px);
+}
+
+.open .cheesy::before {
+    opacity: 0;
+}
+
+
+.logo img {
+    height: auto;
+    width: 90px;
+    margin-left: 50px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+/*------------------------------------------------*/
+/*---------------------Content--------------------*/
+/*------------------------------------------------*/
+.home {
+    background-image: url("../images/bg-img/img_1.jpg");
+    background-size: cover;
+}
+
+.about {
+    background-image: url("../images/bg-img/img_2.jpg");
+    background-size: cover;
+}
+
+.setup {
+    background-image: url("../images/bg-img/img_3.jpg");
+    background-size: cover;
+}
+
+.portfolio {
+    background-image: url("../images/bg-img/img_2.jpg");
+    background-size: cover;
+}
+
+.socialmedia {
+    background-color: #303030;
+}
+
+.impressum {
+    background-image: url("../images/bg-img/img_3.jpg");
+    background-size: cover;
+}
+
+.trapezleft {
+    width: 33%;
+    height: 0;
+    border-right: 140px solid transparent;
+    border-bottom: 100vh solid #303030;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trapezright {
+    width: 33%;
+    height: 0;
+    border-left: 140px solid transparent;
+    border-bottom: 100vh solid #303030;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bg-video iframe {
+    position: absolute;
+    top: -moz-calc(53% - 20%);
+    top: -webkit-calc(53% - 20%);
+    top: calc(53% - 20%);
+    left: -moz-calc(50% - 326px);
+    left: -webkit-calc(50% - 326px);
+    left: calc(50% - 326px);
+    width: 652px;
+    height: 40%;
+}
+
+.socialmedia .logo {
+    position: absolute;
+    top: 20%;
+    left: -moz-calc(50% - 45px);
+    left: -webkit-calc(50% - 45px);
+    left: calc(50% - 45px);
+    margin-left: -50px;
+}
+.sociallogo{
+    position: absolute;
+    top: 78%;
+    left: -moz-calc(50% - 156px);
+    left: -webkit-calc(50% - 156px);
+    left: calc(50% - 156px);
+}
+.sociallogo img{
+    width: 100px;
+}
+.context-left{
+    position: absolute;
+    top: 150px;
+    max-width: 500px;
+    left: 50px;
+    color: white;
+}
+.context-left h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: -9px;
+}
+.context-left .lineleft{
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.context-left p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: white;
+}
+.context-right{
+    position: absolute;
+    top: 150px;
+    max-width: 500px;
+    right: 50px;
+    color: white;
+}
+.context-right h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: -9px;
+}
+.context-right .lineright{
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.context-right p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: white;
+}
+.imptext a{
+    color: #FF7200;
+}
+
+/*------------------------------------------------*/
+/*--------------------RESPONSIVE------------------*/
+/*------------------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+    .socialmedia .logo {
+        top: 15%;
+    }
+
+    .trapezleft {
+        width: 580px;
+        border-right: 0px solid transparent;
+    }
+
+    .trapezright {
+        width: 580px;
+        border-left: 0px solid transparent;
+    }
+    .context-right,
+    .context-left{
+        top: 100px;
+    }
+    .bg-video iframe{
+        width: 100%;
+        height: 33%;
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .desknav {
+        display: none;
+    }
+
+    .mobnav,
+    .sitenav{
+        display: block;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .sitenav ul{
+        padding-top: 10px;
+    }
+    .sitenav ul li{
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .header .navbar-top{
+        height: 70px;
+    }
+    .sitenav--open{
+        top: 70px;
+    }
+    .menu-toggle{
+        padding: 24px;
+    }
+    .header .logo img{
+        width: 80px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+    .cheesy::before {
+        transform: translateY(-17px);
+    }
+    .cheesy::after {
+        transform: translateY(16px);
+    }
+    .trapezleft,
+    .trapezright{
+        width: 60%;
+    }
+    .context-left{
+        top: 100px;
+        left: 30px;
+        max-width: 80%;
+    }
+    .context-right{
+        top: 100px;
+        right: 30px;
+        max-width: 80%;
+    }
+    .context-left h2,
+    .context-right h2{
+        font-size: 35px;
+    }
+    .context-left p,
+    .context-right p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .context-right,
+    .context-left{
+        top: 80px;
+    }
+    .context-right h2,
+    .context-left h2{
+        font-size: 25px;
+    }
+    .context-right p,
+    .context-left p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .context-right,
+    .context-left{
+        top: 80px;
+    }
+    .context-right h2,
+    .context-left h2{
+        font-size: 20px;
+    }
+    .context-right p,
+    .context-left p{
+        font-size: 15px;
+    }
+}
