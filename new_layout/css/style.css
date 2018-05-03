@@ -14,7 +14,12 @@ a {
 .noscroll {
     overflow: hidden;
 }
-
+h3{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
 /*------------------------------------------------*/
 /*---------------------HEADER---------------------*/
 /*------------------------------------------------*/
