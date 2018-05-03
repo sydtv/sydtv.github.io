@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: #FF7200;
 }
 
 .noscroll {
@@ -28,7 +28,9 @@ a {
     -moz-box-shadow: -8px -5px 15px 15px rgba(0, 0, 0, 0.75);
     box-shadow: -8px -5px 15px 15px rgba(0, 0, 0, 0.75);
 }
-
+.header .navbar-top a{
+    color: white;
+}
 .header .desknav {
     float: left;
     position: absolute;
