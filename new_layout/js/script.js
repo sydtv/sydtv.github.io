@@ -1,4 +1,4 @@
-$('.menu-toggle').click(function() {
+$('.menu-toggle').click(function () {
     $('.sitenav').toggleClass('sitenav--open', 500);
     $(this).toggleClass('open');
     $('body').toggleClass('noscroll');

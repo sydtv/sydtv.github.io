@@ -14,12 +14,14 @@ a {
 .noscroll {
     overflow: hidden;
 }
-h3{
+
+h3 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 30px;
 }
+
 /*------------------------------------------------*/
 /*---------------------HEADER---------------------*/
 /*------------------------------------------------*/
@@ -33,9 +35,11 @@ h3{
     -moz-box-shadow: -8px -5px 15px 15px rgba(0, 0, 0, 0.75);
     box-shadow: -8px -5px 15px 15px rgba(0, 0, 0, 0.75);
 }
-.header a{
+
+.header a {
     color: white;
 }
+
 .header .desknav {
     float: left;
     position: absolute;
@@ -68,7 +72,8 @@ h3{
 .sitenav {
     display: none;
 }
-.sitenav{
+
+.sitenav {
     height: 100%;
     position: absolute;
     top: -100%;
@@ -76,10 +81,12 @@ h3{
     width: 100%;
     z-index: 2;
 }
-.sitenav--open{
+
+.sitenav--open {
     top: 100px;
 }
-.sitenav ul li{
+
+.sitenav ul li {
     text-decoration: none;
     list-style: none;
     font-family: 'Oswald', sans-serif;
@@ -90,6 +97,7 @@ h3{
     text-align: center;
     padding: 15px;
 }
+
 .menu-toggle {
     padding: 40px;
     position: absolute;
@@ -137,7 +145,6 @@ h3{
 .open .cheesy::before {
     opacity: 0;
 }
-
 
 .logo img {
     height: auto;
@@ -219,71 +226,82 @@ h3{
     left: calc(50% - 45px);
     margin-left: -50px;
 }
-.sociallogo{
+
+.sociallogo {
     position: absolute;
     top: 78%;
     left: -moz-calc(50% - 156px);
     left: -webkit-calc(50% - 156px);
     left: calc(50% - 156px);
 }
-.sociallogo img{
+
+.sociallogo img {
     width: 100px;
 }
-.context-left{
+
+.context-left {
     position: absolute;
     top: 150px;
     max-width: 500px;
     left: 50px;
     color: white;
 }
-.context-left h2{
+
+.context-left h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 45px;
     margin-bottom: -9px;
 }
-.context-left .lineleft{
+
+.context-left .lineleft {
     background-color: white;
     width: 100%;
     height: 2px;
     border-radius: 15px;
     margin: 20px 0;
 }
-.context-left p{
+
+.context-left p {
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
     font-size: 25px;
     color: white;
 }
-.context-right{
+
+.context-right {
     position: absolute;
     top: 150px;
     max-width: 500px;
     right: 50px;
     color: white;
 }
-.context-right h2{
+
+.context-right h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 45px;
     margin-bottom: -9px;
 }
-.context-right .lineright{
+
+.context-right .lineright {
     background-color: white;
     width: 100%;
     height: 2px;
     border-radius: 15px;
     margin: 20px 0;
 }
-.context-right p{
+
+.context-right p {
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
     font-size: 25px;
     color: white;
 }
-.imptext a{
+
+.imptext a {
     color: #FF7200;
 }
 
@@ -305,11 +323,13 @@ h3{
         width: 580px;
         border-left: 0px solid transparent;
     }
+
     .context-right,
-    .context-left{
+    .context-left {
         top: 100px;
     }
-    .bg-video iframe{
+
+    .bg-video iframe {
         width: 100%;
         height: 33%;
         left: 0;
@@ -323,18 +343,21 @@ h3{
     }
 
     .mobnav,
-    .sitenav{
+    .sitenav {
         display: block;
     }
 }
+
 @media screen and (max-width: 800px) {
-    h3{
+    h3 {
         font-size: 17px;
     }
-    .sitenav ul{
+
+    .sitenav ul {
         padding-top: 10px;
     }
-    .sitenav ul li{
+
+    .sitenav ul li {
         text-decoration: none;
         list-style: none;
         font-family: 'Oswald', sans-serif;
@@ -345,74 +368,91 @@ h3{
         text-align: center;
         padding: 10px;
     }
-    .header .navbar-top{
+
+    .header .navbar-top {
         height: 70px;
     }
-    .sitenav--open{
+
+    .sitenav--open {
         top: 70px;
     }
-    .menu-toggle{
+
+    .menu-toggle {
         padding: 24px;
     }
-    .header .logo img{
+
+    .header .logo img {
         width: 80px;
         margin-left: 30px;
         margin-top: 15px;
     }
+
     .cheesy::before {
         transform: translateY(-17px);
     }
+
     .cheesy::after {
         transform: translateY(16px);
     }
+
     .trapezleft,
-    .trapezright{
+    .trapezright {
         width: 60%;
     }
-    .context-left{
+
+    .context-left {
         top: 100px;
         left: 30px;
         max-width: 80%;
     }
-    .context-right{
+
+    .context-right {
         top: 100px;
         right: 30px;
         max-width: 80%;
     }
+
     .context-left h2,
-    .context-right h2{
+    .context-right h2 {
         font-size: 35px;
     }
+
     .context-left p,
-    .context-right p{
+    .context-right p {
         font-size: 20px;
     }
 }
+
 @media screen and (max-width: 450px) {
     .context-right,
-    .context-left{
+    .context-left {
         top: 80px;
     }
+
     .context-right h2,
-    .context-left h2{
+    .context-left h2 {
         font-size: 25px;
     }
+
     .context-right p,
-    .context-left p{
+    .context-left p {
         font-size: 17px;
     }
 }
+
 @media screen and (max-width: 380px) {
     .context-right,
-    .context-left{
+    .context-left {
         top: 80px;
     }
+
     .context-right h2,
-    .context-left h2{
+    .context-left h2 {
         font-size: 20px;
     }
+
     .context-right p,
-    .context-left p{
+    .context-left p {
         font-size: 15px;
     }
 }
