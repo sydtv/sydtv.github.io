@@ -17,6 +17,7 @@ function showMobNav() {
     console.log(heightDropdown);
 
     $('.mobile-nav ul').css('height', heightDropdown);
+    $('.bigImage').css('height', heightWindow);
 
     $( window ).resize(function() {
         var heightNav = $('.topnavbar').height();
@@ -25,6 +26,7 @@ function showMobNav() {
         console.log(heightDropdown);
 
         $('.mobile-nav ul').css('height', heightDropdown);
+        $('.bigImage').css('height', heightWindow);
     });
 
     ///////////////////////////////////////////////////
