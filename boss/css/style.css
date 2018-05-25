@@ -6,7 +6,9 @@
     text-decoration: none;
     color: black;
 }
-
+::-webkit-scrollbar{
+    width: 0px;
+}
 .cf:after {
     content: '';
     display: table;
@@ -26,8 +28,9 @@
 
 @media screen and (min-width: 320px) {
     body {
-        background-color: black;
+        background-color: white;
     }
+
 
     /*-------------------------HEADER------------------------------*/
 
@@ -130,7 +133,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     .mobile-nav ul li {
@@ -161,19 +164,119 @@
     }
 
     /*-------------------------BIG-IMG-----------------------------*/
+
+    /*-------------------------CONTENT-----------------------------*/
+
+    h2{
+        text-transform: lowercase;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .aboutus{
+        margin: 15px 10px;
+    }
+
+    .aboutus .underline{
+        height: 2px;
+        background-color: black;
+        width: 5em;
+        margin: 10px 0;
+    }
+
+    .aboutus p{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    /*--------------------------ZF1--------------------------------*/
+
+    .zf1{
+        background-image: url("../images/content/zf/zf1.jpg");
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    /*--------------------------ZF1--------------------------------*/
+
+    .skateboards{
+        margin: 15px 10px;
+    }
+
+    .skateboards .underline{
+        height: 2px;
+        background-color: black;
+        width: 5em;
+        margin: 10px 0;
+    }
+
+    .skateboards p{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    .skateMob{
+        display: block;
+    }
+
+    .skatewaterwheel{
+        display: none;
+    }
+
+    /*--------------------------ZF2--------------------------------*/
+
+    .zf2{
+        background-image: url("../images/content/zf/zf2.jpg");
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*--------------------------ZF2--------------------------------*/
+
+    /*--------------------------ZF3--------------------------------*/
+
+    .zf3{
+        background-image: url("../images/content/zf/zf3.jpg");
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*--------------------------ZF3--------------------------------*/
+
+    /*--------------------------ZF4--------------------------------*/
+
+    .zf4{
+        background-image: url("../images/content/zf/zf4.jpg");
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*--------------------------ZF4--------------------------------*/
+
+
+    /*-------------------------CONTENT-----------------------------*/
+
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 888px) {
 
     /*------------------------MAIN-NAV-----------------------------*/
 
     .topnavbar {
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     .main-nav {
         display: block;
         float: right;
+        padding: 0 20px 0 0;
     }
 
     .main-nav ul li {
@@ -201,6 +304,36 @@
 
     /*-------------------------MOB-NAV-----------------------------*/
 
+    /*-------------------------CONTENT-----------------------------*/
+
+    .skateboards{
+        height: 550px;
+    }
+
+    .skateMob{
+        display: none;
+    }
+
+    .skatewaterwheel{
+        display: block;
+        position: absolute !important;
+        left: calc(50% - 125px);
+        top: 350px;
+    }
+
+    /*-------------------------CONTENT-----------------------------*/
 
 
+}
+
+
+@media screen and (min-width: 1140px) {
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .skatewaterwheel{
+        top: 325px;
+    }
 }

@@ -45,4 +45,20 @@ function showMobNav() {
         hideMobNav();
     });
 
+    //Waterwheel Skateboard///////////////////////////////////
+
+    var carousel = $(".skatewaterwheel").waterwheelCarousel({
+        flankingItems: 2
+    });
+    $('#prev').bind('click',function(){
+        carousel.prev();
+        return false;
+    });
+    $('#next').bind('click',function(){
+        carousel.next();
+        return false;
+    });
+
+    ///////////////////////////////////////////////////
+
 }(jQuery));
