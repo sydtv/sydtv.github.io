@@ -345,15 +345,7 @@
 
     /*-------------------------MOB-NAV-----------------------------*/
     /*-------------------------CONTENT-----------------------------*/
-    .bigImage,
-    .zf1,
-    .zf2,
-    .zf3,
-    .zf4,
-    .zf5 {
-        height: 300px;
-        background-attachment: fixed;
-    }
+
     /*-------------------------CONTENT-----------------------------*/
 
 }
@@ -369,5 +361,13 @@
     .long div{
         width: 20%;
     }
-
+    .bigImage,
+    .zf1,
+    .zf2,
+    .zf3,
+    .zf4,
+    .zf5 {
+        height: 300px;
+        background-attachment: fixed;
+    }
 }
