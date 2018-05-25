@@ -218,13 +218,18 @@
         font-weight: 100;
         font-size: 20px;
     }
-
-    .skateMob{
-        display: block;
+    .skate p{
+        text-align: center;
+        padding-top: 5px;
     }
-
-    .skatewaterwheel{
-        display: none;
+    .skate div{
+        padding: 20px 0 15px 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .skate div img{
+        margin-left: calc(50% - 70px);
+        width: 140px;
     }
 
     /*--------------------------ZF2--------------------------------*/
@@ -306,20 +311,6 @@
 
     /*-------------------------CONTENT-----------------------------*/
 
-    .skateboards{
-        height: 550px;
-    }
-
-    .skateMob{
-        display: none;
-    }
-
-    .skatewaterwheel{
-        display: block;
-        position: absolute !important;
-        left: calc(50% - 125px);
-        top: 350px;
-    }
 
     /*-------------------------CONTENT-----------------------------*/
 
@@ -327,13 +318,11 @@
 }
 
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
 
     .container{
         max-width: 1200px;
         margin: 0 auto;
     }
-    .skatewaterwheel{
-        top: 325px;
-    }
+
 }
