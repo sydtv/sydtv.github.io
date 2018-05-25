@@ -115,7 +115,7 @@
     .mobile-nav ul{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     .mobile-nav ul li{
         list-style: none;
@@ -124,15 +124,12 @@
         font-size: 160%;
         text-decoration: none;
         text-transform: lowercase;
-        -moz-box-flex: 1;
-        -webkit-box-flex: 1;
+        padding: 0 0 10px 0;
     }
 
     .mobile-nav ul li:first-child{
-        padding-top: 25px;
+        padding-top: 10px;
     }
 
-    .mobile-nav ul li:last-child{
-        padding-bottom: 25px;
-    }
+
 }
