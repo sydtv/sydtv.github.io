@@ -16,7 +16,7 @@ function showMobNav() {
     var heightDropdown = heightWindow - heightNav;
     console.log(heightDropdown);
 
-    $('.mobile-nav ul').css('height', heightWindow);
+    $('.mobile-nav ul').css('height', heightDropdown);
 
     $( window ).resize(function() {
         var heightNav = $('.topnavbar').height();
@@ -24,7 +24,7 @@ function showMobNav() {
         var heightDropdown = heightWindow - heightNav;
         console.log(heightDropdown);
 
-        $('.mobile-nav ul').css('height', heightWindow);
+        $('.mobile-nav ul').css('height', heightDropdown);
     });
 
     ///////////////////////////////////////////////////

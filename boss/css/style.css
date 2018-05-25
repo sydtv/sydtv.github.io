@@ -52,7 +52,7 @@
     .logo-head img {
         width: 48px;
         height: auto;
-        padding: 17px 0 3px 10px;
+        padding: 17px 0 8px 15px;
     }
 
     .burgericon {
@@ -121,11 +121,18 @@
         list-style: none;
         text-align: center;
         font-family: 'Oswald', sans-serif;
-        font-size: 30px;
+        font-size: 160%;
         text-decoration: none;
         text-transform: lowercase;
-        padding: 10px 0;
         -moz-box-flex: 1;
         -webkit-box-flex: 1;
+    }
+
+    .mobile-nav ul li:first-child{
+        padding-top: 25px;
+    }
+
+    .mobile-nav ul li:last-child{
+        padding-bottom: 25px;
     }
 }
