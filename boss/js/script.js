@@ -32,6 +32,38 @@ function showMobNav() {
 
     ///////////////////////////////////////////////////
 
+    //HEIGHT Card IMG//////////////////////////////////
+
+    var heightCard = $('.cardimg img').height();
+
+    $('.cardimg .text').css('height', heightCard);
+
+    $(window).resize(function () {
+        var heightCard = $('.cardimg img').height();
+
+        $('.cardimg .text').css('height', heightCard);
+    });
+
+    ///////////////////////////////////////////////////
+
+    //HEIGHT Accordions//////////////////////////////////
+
+    var heightTitler = $('.company .wrap .titler').height();
+    var heightImgComp = $('.company .wrap .cardimg').height();
+    var heightAcc = heightTitler + heightImgComp + 80;
+
+    $('.company .acord').css('top', heightAcc);
+
+    $(window).resize(function () {
+        var heightTitler = $('.company .wrap .titler').height();
+        var heightImgComp = $('.company .wrap .cardimg').height();
+        var heightAcc = heightTitler + heightImgComp + 80;
+        $('.company .acord').css('top', heightAcc);
+
+    });
+
+    ///////////////////////////////////////////////////
+
 
     $('.burgericon').click(function () {
         if ($('.mobilebar').hasClass('open-nav')) {

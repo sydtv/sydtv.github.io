@@ -191,38 +191,56 @@ h1{
         background-size: cover;
         background-position: right;
     }
+    .acord{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        margin-left: 5%;
+    }
     .titler{
         position: absolute;
         top: 80px;
         height: 35px;
-        width: 240px;
+        width: 90%;
         background: white;
-        left: calc(50% - 120px);
+        left: calc(50% - 45%);
+    }
+    .titlerac{
+        height: 35px;
+        width: 90%;
+        background: white;
     }
     .titler h2{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
-        margin: 2px 0 0 20px;
+        margin: 2px 0 0 5%;
+    }
+    .titlerac h2{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        margin: 2px 0 0 5%;
     }
     .cardimg{
         position: absolute;
         top: 115px;
-        left: calc(50% - 120px);
+        left: calc(50% - 45%);
         background: rgba(255,255,255, 0.6);
-        padding: 20px 20px 15px 20px;
-        height: 205px;
+        width: 90%;
     }
     .cardimg .text{
          display: none;
-        max-width: 200px;
+        max-width: 90%;
+        padding: 5%;
     }
     .cardimg .text p{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
     }
     .cardimg img{
-        width: 200px;
+        width: 90%;
         display: none;
+        position: relative;
+        padding: 5%;
     }
     /*-------------------------COMPANY-----------------------------*/
 

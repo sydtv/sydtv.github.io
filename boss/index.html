@@ -65,14 +65,28 @@
             </div>
         </div>
         <div class="company section" data-anchor="company">
-            <div class="titler">
-                <h2>Company</h2>
-            </div>
-            <div class="cardimg">
-                <div class="text "><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <div class="wrap">
+                <div class="titler">
+                    <h2>Company</h2>
                 </div>
-                <img src="images/content/company/card.jpg" class="visible" alt="Company">
+                <div class="cardimg">
+                    <div class="text "><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    </div>
+                    <img src="images/content/company/card.jpg" class="visible" alt="Company">
+                </div>
+            </div>
+            <div class="acord">
+                <div class="titlerac">
+                    <h2>Motivation</h2>
+                </div>
+                <div class="titlerac">
+                    <h2>Vision</h2>
+                </div>
+                <div class="titlerac">
+                    <h2>Mission</h2>
+                </div>
             </div>
         </div>
         <div class="team section" data-anchor="team"></div>
@@ -89,8 +103,11 @@
 <script src="js/scroll.js"></script>
 <script src="js/script.js"></script>
 <script>
-    $('#wrapper').fullpage();
-
+    $(document).ready(function () {
+        $('#wrapper').fullpage({
+            responsiveWidth: 1100
+        });
+    });
 </script>
 
 </body>
