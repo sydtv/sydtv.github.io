@@ -2,12 +2,13 @@ function hideMobNav() {
     $('.mobilebar, .burgericon').removeClass('open-nav');
     $('.mobilebar').slideUp();
 }
+
 function showMobNav() {
     $('.mobilebar, .burgericon').addClass('open-nav');
     $('.mobilebar').slideDown();
 }
 
-(function($) {
+(function ($) {
 
     //HEIGHT MOBILE-NAV///////////////////////////////////
 
@@ -19,7 +20,7 @@ function showMobNav() {
     $('.mobile-nav ul').css('height', heightDropdown);
     $('.bigImage').css('height', heightWindow);
 
-    $( window ).resize(function() {
+    $(window).resize(function () {
         var heightNav = $('.topnavbar').height();
         var heightWindow = $(window).height();
         var heightDropdown = heightWindow - heightNav;
@@ -32,11 +33,10 @@ function showMobNav() {
     ///////////////////////////////////////////////////
 
 
-
     $('.burgericon').click(function () {
-        if($('.mobilebar').hasClass('open-nav')){
+        if ($('.mobilebar').hasClass('open-nav')) {
             hideMobNav();
-        }else {
+        } else {
             showMobNav();
         }
     });
@@ -45,20 +45,40 @@ function showMobNav() {
         hideMobNav();
     });
 
-    //Waterwheel Skateboard///////////////////////////////////
+    //Card IMG////////////////////////////////////////////
 
-    var carousel = $(".skatewaterwheel").waterwheelCarousel({
-        flankingItems: 2
+    $('.cardimg').click(function () {
+       $('.cardimg .text').toggleClass('visible');
+       $('.cardimg img').toggleClass('visible');
     });
-    $('#prev').bind('click',function(){
-        carousel.prev();
-        return false;
-    });
-    $('#next').bind('click',function(){
-        carousel.next();
-        return false;
-    });
+
+    //////////////////////////////////////////////////////
+
+    // Accordion//////////////////////////////////////////
+
+    var acc = document.getElementsByClassName("accordion");
+    var panel = document.getElementsByClassName('panel');
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function () {
+            var setClasses = !this.classList.contains('active');
+            setClass(acc, 'active', 'remove');
+            setClass(panel, 'show', 'remove');
+
+            if (setClasses) {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    }
+
+    function setClass(els, className, fnName) {
+        for (var i = 0; i < els.length; i++) {
+            els[i].classList[fnName](className);
+        }
+    }
 
     ///////////////////////////////////////////////////
+
 
 }(jQuery));

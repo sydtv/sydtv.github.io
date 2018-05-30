@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="js/jQPlugs/fullpage/jquery.fullPage.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        (function () {
+            var trial = document.createElement('script');
+            trial.type = 'text/javascript';
+            trial.async = true;
+            trial.src = 'https://easy.myfonts.net/v2/js?sid=233460(font-family=Remachine+Script)&key=FvQtQktyje';
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(trial);
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -12,14 +23,13 @@
     <div class="topnavbar cf">
         <div class="logo-head"><a href="#home"><img src="images/logo.png" alt="Logo"></a></div>
         <nav class="main-nav">
-            <ul>
+            <ul class="container">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#skateboards">Skateboards</a></li>
-                <li><a href="#longboards">Longboards</a></li>
-                <li><a href="#boards">Boards</a></li>
-                <li><a href="#trucks">Trucks</a></li>
-                <li><a href="#locations">Locations</a></li>
+                <li><a href="#company">Company</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#making">The Making</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="burgericon">
@@ -33,140 +43,55 @@
         <nav class="mobile-nav">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#skateboards">Skateboards</a></li>
-                <li><a href="#longboards">Longboards</a></li>
-                <li><a href="#boards">Boards</a></li>
-                <li><a href="#trucks">Trucks</a></li>
-                <li><a href="#locations">Locations</a></li>
+                <li><a href="#company">Company</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#making">The Making</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 </div>
 
 <div class="content">
-    <div class="bigImage" id="home"></div>
-    <div class="container">
-        <div class="aboutus" id="about">
-            <div class="title"><h2>about us</h2></div>
-            <div class="underline"></div>
-            <div class="text-about">
-                <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny
-                    of
-                    evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the
-                    valley
-                    of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike
-                    down upon thee with great vengeance and furious anger those who would attempt to poison and destroy
-                    My
-                    brothers. And you will know My name is the Lord when I lay My vengeance upon thee. </p>
-            </div>
-        </div>
-    </div>
-    <div class="zf1"></div>
-    <div class="container">
-        <div class="skateboards cf" id="skateboards">
-            <div class="heightTest">
-                <h2>Skateboards</h2>
-                <div class="underline"></div>
-                <p>Available in our stores</p>
-            </div>
-            <div class="skate">
-                <div class="skatemob1">
-                    <img src="images/content/skateboard/s1.png" alt="Skateboard 1">
-                    <p>Skateboard 1</p>
-                    <p>40$</p>
-                </div>
-                <div class="skatemob2">
-                    <img src="images/content/skateboard/s2.png" alt="Skateboard 2">
-                    <p>Skateboard 1</p>
-                    <p>40$</p>
-                </div>
-                <div class="skatemob3">
-                    <img src="images/content/skateboard/s3.png" alt="Skateboard 3">
-                    <p>Skateboard 1</p>
-                    <p>40$</p>
-                </div>
-                <div class="skatemob4">
-                    <img src="images/content/skateboard/s4.png" alt="Skateboard 4">
-                    <p>Skateboard 1</p>
-                    <p>40$</p>
-                </div>
-                <div class="skatemob5">
-                    <img src="images/content/skateboard/s5.png" alt="Skateboard 5">
-                    <p>Skateboard 1</p>
-                    <p>40$</p>
+    <div id="wrapper">
+        <div class="bigImage section" data-anchor="home">
+            <div class="claimer">
+                <div class="hoehe"></div>
+                <div class="text">
+                    <h1>SurfSoul </h1>
+                    <p>Handmade surfboards</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="zf2"></div>
-    <div class="container">
-        <div class="longboards cf" id="longboards">
-            <h2>Longboards</h2>
-            <div class="underline"></div>
-            <p>Available in our stores</p>
-            <div class="long">
-                <div class="longmob1">
-                    <img src="images/content/longboard/l1.png" alt="Longboard 1">
-                    <p>Longboard 1</p>
-                    <p>40$</p>
+        <div class="company section" data-anchor="company">
+            <div class="titler">
+                <h2>Company</h2>
+            </div>
+            <div class="cardimg">
+                <div class="text "><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 </div>
-                <div class="longmob2">
-                    <img src="images/content/longboard/l2.png" alt="Longboard 2">
-                    <p>Longboard 2</p>
-                    <p>40$</p>
-                </div>
-                <div class="longmob3">
-                    <img src="images/content/longboard/l3.png" alt="Longboard 3">
-                    <p>Longboard 3</p>
-                    <p>40$</p>
-                </div>
-                <div class="longmob4">
-                    <img src="images/content/longboard/l4.png" alt="Longboard 4">
-                    <p>Longboard 4</p>
-                    <p>40$</p>
-                </div>
-                <div class="longmob5">
-                    <img src="images/content/longboard/l5.png" alt="Longboard 5">
-                    <p>Longboard 5</p>
-                    <p>40$</p>
-                </div>
+                <img src="images/content/company/card.jpg" class="visible" alt="Company">
             </div>
         </div>
-    </div>
-    <div class="zf3"></div>
-    <div class="container">
-        <div class="boards" id="boards">
-            <h2>Boards</h2>
-            <div class="underline"></div>
-            <p>Available in our stores</p>
-        </div>
-    </div>
-    <div class="zf4"></div>
-    <div class="container">
-        <div class="trucks" id="trucks">
-            <h2>trucks</h2>
-            <div class="underline"></div>
-            <p>Available in our stores</p>
-        </div>
-    </div>
-    <div class="locations" id="locations">
-        <iframe src="https://snazzymaps.com/embed/73783" width="100%" height="400px" style="border:none;"></iframe>
+        <div class="team section" data-anchor="team"></div>
+        <div class="products section" data-anchor="products"></div>
+        <div class="making section" data-anchor="making"></div>
+        <div class="contact section" data-anchor="contact"></div>
     </div>
 </div>
 
-<div class="footer">
-    <div class="impdisc cf">
-        <h3><a href="">Impressum</a></h3>
-        <h3><a href="">Disclaimer</a></h3>
-    </div>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="js/jQPlugs/jquery.waterwheelCarousel.js"></script>
+<script src="js/jQPlugs/fullpage/jquery.fullPage.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/script.js"></script>
+<script>
+    $('#wrapper').fullpage();
+
+</script>
 
 </body>
 </html>

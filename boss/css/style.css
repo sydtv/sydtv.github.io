@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300,500');
 
 * {
     margin: 0;
@@ -10,7 +11,15 @@
 ::-webkit-scrollbar {
     width: 0px;
 }
-
+#mfPreviewBar{
+    display: none;
+}
+h1{
+    font-family: 'Remachine Script';
+    font-weight: lighter;
+    text-align: right;
+    font-size: 50pt;
+}
 .cf:after {
     content: '';
     display: table;
@@ -18,8 +27,8 @@
     float: none;
 }
 
-.noscroll {
-    overflow: hidden;
+.visible{
+    display: block !important;
 }
 
 .head {
@@ -27,6 +36,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 99999;
 }
 
 @media screen and (min-width: 320px) {
@@ -51,9 +61,9 @@
     }
 
     .logo-head img {
-        width: 48px;
+        width: 125px;
         height: auto;
-        padding: 17px 0 8px 15px;
+        padding: 12px 0 8px 15px;
     }
 
     /*--------------------------LOGO-------------------------------*/
@@ -133,10 +143,9 @@
     .mobile-nav ul li {
         list-style: none;
         text-align: center;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Sunflower', sans-serif;
         font-size: 160%;
         text-decoration: none;
-        text-transform: lowercase;
         padding: 0 0 10px 0;
     }
 
@@ -150,189 +159,109 @@
     .bigImage {
         background-image: url("../images/content/headimg.jpg");
         background-size: cover;
-        background-position: center;
+        background-position: left;
     }
 
-    /*-------------------------BIG-IMG-----------------------------*/
-    /*-------------------------CONTENT-----------------------------*/
-    h2 {
-        text-transform: lowercase;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 400;
-        font-size: 30px;
+    .bigImage p{
+        text-align: right;
+        font-family: 'Sunflower', sans-serif;
+        font-size: 18pt;
+        margin-top: -18px;
     }
-
-    .aboutus {
-        margin: 15px 10px;
+    .bigImage .claimer{
+        margin-right: 20px;
     }
-
-    .aboutus .underline {
-        height: 2px;
+    .bigImage .hoehe{
+        height: 125px;
+        width: 2px;
         background-color: black;
-        width: 5em;
-        margin: 10px 0;
-    }
-
-    .aboutus p {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 100;
-        font-size: 20px;
-    }
-
-    /*--------------------------ZF1--------------------------------*/
-    .zf1 {
-        background-image: url("../images/content/zf/zf1.jpg");
-        height: 150px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /*--------------------------ZF1--------------------------------*/
-    .skateboards {
-        margin: 15px 10px;
-    }
-
-    .skateboards .underline {
-        height: 2px;
-        background-color: black;
-        width: 5em;
-        margin: 10px 0;
-    }
-
-    .skateboards p {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 100;
-        font-size: 20px;
-    }
-
-    .skate p {
-        text-align: center;
-        padding-top: 5px;
-    }
-
-    .skate div {
-        padding: 20px 0 15px 0;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .skate div img {
-        margin-left: calc(50% - 60px);
-        width: auto;
-        height: 210px;
-    }
-
-    /*--------------------------ZF2--------------------------------*/
-    .zf2 {
-        background-image: url("../images/content/zf/zf2.jpg");
-        height: 150px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /*--------------------------ZF2--------------------------------*/
-    .longboards {
-        margin: 15px 10px;
-    }
-
-    .longboards p {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 100;
-        font-size: 20px;
-    }
-
-    .longboards .underline {
-        height: 2px;
-        background-color: black;
-        width: 5em;
-        margin: 10px 0;
-    }
-
-    .long p {
-        text-align: center;
-    }
-
-    .long div {
-        padding: 20px 0 15px 0;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .long div img {
-        margin-left: calc(50% - 60px);
-        width: auto;
-        height: 210px;
-    }
-
-    /*--------------------------ZF3--------------------------------*/
-    .zf3 {
-        background-image: url("../images/content/zf/zf3.jpg");
-        height: 150px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /*--------------------------ZF3--------------------------------*/
-    /*--------------------------ZF4--------------------------------*/
-    .zf4 {
-        background-image: url("../images/content/zf/zf4.jpg");
-        height: 150px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /*--------------------------ZF4--------------------------------*/
-    /*-------------------------CONTENT-----------------------------*/
-    /*-------------------------FOOTER------------------------------*/
-    .footer {
-        background-color: #2b2b2b;
-        margin-top: -4px;
-    }
-
-    .footer h3{
+        margin-top: -10px;
         float: right;
-        color: white;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 100;
-        font-size: 20px;
-        text-transform: lowercase;
-        padding: 10px 0;
-    }
 
-    .footer h3 a{
-        color: white;
     }
+    .bigImage .text{
+        padding-right: 20px;
 
-    .footer h3{
-        padding-right: 10px;
     }
-    /*-------------------------FOOTER------------------------------*/
+    /*-------------------------BIG-IMG-----------------------------*/
+
+    /*-------------------------COMPANY-----------------------------*/
+    .company{
+        background-image: url("../images/content/company/company.jpg");
+        background-size: cover;
+        background-position: right;
+    }
+    .titler{
+        position: absolute;
+        top: 80px;
+        height: 35px;
+        width: 240px;
+        background: white;
+        left: calc(50% - 120px);
+    }
+    .titler h2{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        margin: 2px 0 0 20px;
+    }
+    .cardimg{
+        position: absolute;
+        top: 115px;
+        left: calc(50% - 120px);
+        background: rgba(255,255,255, 0.6);
+        padding: 20px 20px 15px 20px;
+        height: 205px;
+    }
+    .cardimg .text{
+         display: none;
+        max-width: 200px;
+    }
+    .cardimg .text p{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+    }
+    .cardimg img{
+        width: 200px;
+        display: none;
+    }
+    /*-------------------------COMPANY-----------------------------*/
 
 }
 
 @media screen and (min-width: 400px) {
 
-    .skate div {
-        width: 50%;
-        float: left;
-    }
-
-    .long div {
-        width: 50%;
-        float: left;
-    }
 
 }
 
 @media screen and (min-width: 800px) {
-    .skate div,
-    .long div {
-        width: 25%;
+    h1{
+        font-size: 80pt;
     }
 
+    .bigImage p{
+        text-align: right;
+        font-family: 'Sunflower', sans-serif;
+        font-size: 25pt;
+        margin-top: -25px;
+    }
+    .bigImage .claimer{
+        margin-right: 20px;
+    }
+    .bigImage .hoehe{
+        height: 180px;
+        width: 2px;
+        background-color: black;
+        margin-top: -10px;
+        float: right;
+
+    }
+    .bigImage .text{
+        padding-right: 20px;
+
+    }
 }
 
-@media screen and (min-width: 888px) {
+@media screen and (min-width: 909px) {
 
     /*------------------------MAIN-NAV-----------------------------*/
     .topnavbar {
@@ -348,10 +277,9 @@
     .main-nav ul li {
         float: left;
         list-style: none;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Sunflower', sans-serif;
         font-size: 160%;
-        text-transform: lowercase;
-        padding: 12px 10px 10px 25px;
+        padding: 18px 10px 10px 25px;
         font-weight: 100;
     }
 
@@ -366,10 +294,6 @@
     }
 
     /*-------------------------MOB-NAV-----------------------------*/
-    /*-------------------------CONTENT-----------------------------*/
-    /*-------------------------CONTENT-----------------------------*/
-    /*--------------------------FOOTER-----------------------------*/
-    /*--------------------------FOOTER-----------------------------*/
 
 }
 
@@ -380,18 +304,5 @@
         margin: 0 auto;
     }
 
-    .skate div,
-    .long div {
-        width: 20%;
-    }
 
-    .bigImage,
-    .zf1,
-    .zf2,
-    .zf3,
-    .zf4,
-    .zf5 {
-        height: 300px;
-        background-attachment: fixed;
-    }
 }
