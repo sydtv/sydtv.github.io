@@ -196,6 +196,7 @@ h1{
         background-image: url("../images/content/company/company.jpg");
         background-size: cover;
         background-position: right;
+        height: 1100px !important;
     }
     .acord{
         position: absolute;
@@ -298,14 +299,14 @@ h1{
         top: 70px !important;
         right: 0;
     }
-    .dropacc p,
-    .cardimg .text p{
-        font-size: 15pt;
-    }
+
     .titlerac h2{
         font-weight: lighter;
         padding: 5px 0 3px 8px;
         margin: 5px 0;
+    }
+    .company{
+        height: auto !important;
     }
 }
 
@@ -333,7 +334,6 @@ h1{
     }
     .bigImage .text{
         padding-right: 20px;
-
     }
 }
 
@@ -373,12 +373,14 @@ h1{
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
 
     .container {
-        max-width: 1200px;
+        max-width: 1100px;
         margin: 0 auto;
+        position: relative;
     }
-
-
+    .company .container{
+        top: -400px;
+    }
 }
