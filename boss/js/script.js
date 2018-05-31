@@ -46,6 +46,41 @@ function showMobNav() {
 
     ///////////////////////////////////////////////////
 
+    //EINMITTEN/////////////////////////////////////////
+
+    var widthCardimg = $('.titler').width();
+    var mittler = widthCardimg /= 2;
+    var calcer = "calc(50% - " + mittler + "px)";
+    $('.titler').css('left', calcer);
+    $('.cardimg').css('left', calcer);
+
+
+    $(window).resize(function () {
+        var widthCardimg = $('.titler').width();
+        var mittler = widthCardimg /= 2;
+        var calcer = "calc(50% - " + mittler + "px)";
+        $('.titler').css('left', calcer);
+        $('.cardimg').css('left', calcer);
+
+    });
+    ////////////////////////////////////////////////////
+
+    //HEIGHT TEXT//////////////////////////////////
+
+    var heightIMGtext = $('.company .wrap .cardimg img').height();
+    var heightTEXT = heightIMGtext + 20;
+    console.log(heightTEXT);
+    $('.company .cardimg .text').css('height', heightTEXT);
+
+    $(window).resize(function () {
+        var heightIMGtext = $('.company .wrap .cardimg img').height();
+
+        $('.company .cardimg .text').css('height', heightIMGtext);
+
+    });
+
+    ///////////////////////////////////////////////////
+
     //HEIGHT Accordions//////////////////////////////////
 
     var heightTitler = $('.company .wrap .titler').height();
