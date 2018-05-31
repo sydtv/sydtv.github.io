@@ -1,3 +1,5 @@
+var important = "!important";
+
 function hideMobNav() {
     $('.mobilebar, .burgericon').removeClass('open-nav');
     $('.mobilebar').slideUp();
@@ -71,7 +73,6 @@ function showMobNav() {
 
     $(window).resize(function () {
         var heightIMGtext = $('.company .wrap .cardimg img').height();
-
         $('.company .cardimg .text').css('height', heightIMGtext);
 
     });
@@ -99,7 +100,7 @@ function showMobNav() {
     //HEIGHT Company//////////////////////////////////
 
     var heightaccord = $('.acord').height();
-    var heightComp = heightTitler + heightImgComp + heightaccord + 222;
+    var heightComp = heightTitler + heightImgComp + heightaccord + 222 ;
 
     $('.company').css('height', heightComp);
     console.log(heightComp);
@@ -108,6 +109,7 @@ function showMobNav() {
         var heightImgComp = $('.company .wrap .cardimg').height();
         var heightaccord = $('.acord').height();
         var heightComp = heightTitler + heightImgComp + heightaccord + 222;
+        console.log(heightComp);
         $('.company').css('height', heightComp);
 
     });

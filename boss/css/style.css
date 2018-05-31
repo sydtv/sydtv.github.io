@@ -267,12 +267,13 @@ h1{
     }
     .cardimg .text{
          display: none;
-        max-width: 90%;
+        max-width: calc(100% - 40px);
     }
     .cardimg .text p{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         padding: 10px;
+
     }
     .cardimg img{
         width: calc(100% - 20px);
@@ -284,9 +285,27 @@ h1{
 
 }
 
-@media screen and (min-width: 400px) {
-
-
+@media screen and (min-width: 700px) {
+    .wrap div{
+        max-width: 45%;
+        float: left;
+        left: 20px !important;
+    }
+    .acord{
+        max-width: 48%;
+        float: left;
+        top: 70px !important;
+        right: 0;
+    }
+    .dropacc p,
+    .cardimg .text p{
+        font-size: 15pt;
+    }
+    .titlerac h2{
+        font-weight: lighter;
+        padding: 5px 0 3px 8px;
+        margin: 5px 0;
+    }
 }
 
 @media screen and (min-width: 800px) {
