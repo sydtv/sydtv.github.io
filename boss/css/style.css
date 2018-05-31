@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
 @import url('https://fonts.googleapis.com/css?family=Sunflower:300,500');
+@import url('https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css');
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: black;
+    list-style: none;
 }
 
 ::-webkit-scrollbar {
@@ -200,6 +202,9 @@ h1{
         width: calc(100% - 40px);
         padding: 5px 20px;
     }
+    .acord li span h2{
+        background-color: white;
+    }
     .titler{
         position: absolute;
         top: 80px;
@@ -213,6 +218,35 @@ h1{
         width: 100%;
         background: white;
     }
+    .titlerac svg{
+        float: right;
+        margin-top: -32px;
+        margin-right: 10px;
+        -webkit-transition: all ease-in-out 250ms;
+        -moz-transition: all ease-in-out 250ms;
+        -ms-transition: all ease-in-out 250ms;
+        -o-transition: all ease-in-out 250ms;
+        transition: all ease-in-out 250ms;
+    }
+    .titlerac.active svg{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+
+    }
+    .dropacc{
+        display: none;
+        background: rgba(255,255,255, 0.6);
+        padding: 10px;
+        margin-top: -5px;
+    }
+    .dropacc p{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        padding: 10px;
+    }
     .titler h2{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
@@ -221,7 +255,8 @@ h1{
     .titlerac h2{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
-        margin: 2px 0 0 10px;
+        padding: 2px 0 0 10px;
+        margin: 5px 0;
     }
     .cardimg{
         position: absolute;
