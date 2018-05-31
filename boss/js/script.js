@@ -135,12 +135,6 @@ function showMobNav() {
        $('.cardimg img').toggleClass('visible');
     });
 
-    $('.cardimg').appear(function () {
-        setTimeout(function () {
-            $('.cardimg .text').toggleClass('visible');
-            $('.cardimg img').toggleClass('visible');
-        },2000);
-    });
 
     //////////////////////////////////////////////////////
 
