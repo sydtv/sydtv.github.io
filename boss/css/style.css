@@ -197,9 +197,8 @@ h1{
     }
     .acord{
         position: absolute;
-        top: 100px;
-        width: 100%;
-        margin-left: 5%;
+        width: calc(100% - 40px);
+        padding: 5px 20px;
     }
     .titler{
         position: absolute;
@@ -211,7 +210,7 @@ h1{
     }
     .titlerac{
         height: 35px;
-        width: 90%;
+        width: 100%;
         background: white;
     }
     .titler h2{
@@ -234,11 +233,11 @@ h1{
     .cardimg .text{
          display: none;
         max-width: 90%;
-        padding: 10px;
     }
     .cardimg .text p{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
+        padding: 10px;
     }
     .cardimg img{
         width: calc(100% - 20px);
