@@ -196,6 +196,7 @@ h1{
         background-image: url("../images/content/company/company.jpg");
         background-size: cover;
         background-position: right;
+        height: 950px !important;
     }
     .acord{
         position: absolute;

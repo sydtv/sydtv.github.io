@@ -4,7 +4,6 @@ var headHeight = $('.head').outerHeight();
 
 var beispiel = $('.heightTest').height();
 
-console.log(beispiel);
 
 $('.main-nav ul li a').click(function (e) {
 

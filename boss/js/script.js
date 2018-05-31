@@ -15,7 +15,6 @@ function showMobNav() {
     var heightNav = $('.topnavbar').height();
     var heightWindow = $(window).height();
     var heightDropdown = heightWindow - heightNav;
-    console.log(heightDropdown);
 
     $('.mobile-nav ul').css('height', heightDropdown);
     $('.bigImage').css('height', heightWindow);
@@ -24,7 +23,6 @@ function showMobNav() {
         var heightNav = $('.topnavbar').height();
         var heightWindow = $(window).height();
         var heightDropdown = heightWindow - heightNav;
-        console.log(heightDropdown);
 
         $('.mobile-nav ul').css('height', heightDropdown);
         $('.bigImage').css('height', heightWindow);
@@ -69,7 +67,6 @@ function showMobNav() {
 
     var heightIMGtext = $('.company .wrap .cardimg img').height();
     var heightTEXT = heightIMGtext + 20;
-    console.log(heightTEXT);
     $('.company .cardimg .text').css('height', heightTEXT);
 
     $(window).resize(function () {
@@ -117,6 +114,13 @@ function showMobNav() {
     $('.cardimg').click(function () {
        $('.cardimg .text').toggleClass('visible');
        $('.cardimg img').toggleClass('visible');
+    });
+
+    $('.cardimg').appear(function () {
+        setTimeout(function () {
+            $('.cardimg .text').toggleClass('visible');
+            $('.cardimg img').toggleClass('visible');
+        },2000);
     });
 
     //////////////////////////////////////////////////////
