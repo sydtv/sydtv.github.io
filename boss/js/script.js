@@ -96,6 +96,23 @@ function showMobNav() {
 
     ///////////////////////////////////////////////////
 
+    //HEIGHT Company//////////////////////////////////
+
+    var heightaccord = $('.acord').height();
+    var heightComp = heightTitler + heightImgComp + heightaccord + 222;
+
+    $('.company').css('height', heightComp);
+    console.log(heightComp);
+    $(window).resize(function () {
+        var heightTitler = $('.company .wrap .titler').height();
+        var heightImgComp = $('.company .wrap .cardimg').height();
+        var heightaccord = $('.acord').height();
+        var heightComp = heightTitler + heightImgComp + heightaccord + 222;
+        $('.company').css('height', heightComp);
+
+    });
+
+    ///////////////////////////////////////////////////
 
     $('.burgericon').click(function () {
         if ($('.mobilebar').hasClass('open-nav')) {
