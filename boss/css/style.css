@@ -383,4 +383,7 @@ h1{
     .company .container{
         top: -400px;
     }
+    .company.cardimg .text p{
+        font-size: 23px;
+    }
 }

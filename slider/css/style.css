@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+embed{
+    display: none;
+}
 body{
     background-color: black;
     overflow: hidden;
