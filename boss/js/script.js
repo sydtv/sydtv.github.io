@@ -10,6 +10,7 @@ function showMobNav() {
     $('.mobilebar').slideDown();
 }
 
+
 (function ($) {
 
     //HEIGHT MOBILE-NAV///////////////////////////////////
@@ -132,3 +133,7 @@ function showMobNav() {
 
 
 }(jQuery));
+$('.underline').appear(function() {
+   // $(this).css('margin-left', '0');
+    alert("hello");
+});

@@ -144,22 +144,33 @@
             </div>
         </div>
         <div class="team section" data-anchor="team">
-            <div class="titleunder">
-                <h2></h2>
-                <div class="underline"></div>
-            </div>
-            <div class="persons">
-                <div class="pers1">
-                    <div class="persimg"></div>
-                    <div class="undertext"></div>
+            <div class="wrapperteam">
+                <div class="titleunder">
+                    <h2>Team</h2>
+                    <div class="underline"></div>
                 </div>
-                <div class="pers2">
-                    <div class="persimg"></div>
-                    <div class="undertext"></div>
-                </div>
-                <div class="pers3">
-                    <div class="persimg"></div>
-                    <div class="undertext"></div>
+                <div class="persons">
+                    <div class="pers1">
+                        <div class="persimg"></div>
+                        <div class="undertext">
+                            <p>John Wick</p>
+                            <p>CEO, Founder</p>
+                        </div>
+                    </div>
+                    <div class="pers2">
+                        <div class="persimg"></div>
+                        <div class="undertext">
+                            <p>Leo Hallway</p>
+                            <p>Board-Specialist</p>
+                        </div>
+                    </div>
+                    <div class="pers3">
+                        <div class="persimg"></div>
+                        <div class="undertext">
+                            <p>Jessica Walker</p>
+                            <p>Marketing, PR</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,11 +183,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script src="js/jQPlugs/fullpage/jquery.fullPage.js"></script>
 <script src="js/jQPlugs/appear/jquery.appear.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/script.js"></script>
 <script>
+    //var query = Modernizr.mq('(min-width: 1100px)');
+    //if (query) {
+      //  $('#wrapper').fullpage();
+    //}
     $(document).ready(function () {
         $('#wrapper').fullpage({
             responsiveWidth: 1100

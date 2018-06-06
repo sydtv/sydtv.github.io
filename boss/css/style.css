@@ -282,8 +282,48 @@ h1{
         display: none;
         position: relative;
         padding: 10px;
+        opacity: 0.6;
     }
     /*-------------------------COMPANY-----------------------------*/
+
+
+    /*-------------------------TEAM--------------------------------*/
+    .team{
+        background-image: url("../images/content/team/bg.jpg");
+        background-size: cover;
+        background-position: center bottom;
+    }
+    .wrapperteam{
+        position: absolute;
+        top: 80px;
+    }
+    .titleunder{
+        margin: 20px;
+    }
+
+    .titleunder .underline{
+        width: 5rem;
+        height: 2px;
+        background-color: black;
+        margin: 2px 0 0 0;
+        margin-left: -100px;
+        -webkit-transition: all 500ms;
+        -moz-transition: all 500ms ;
+        -ms-transition: all 500ms;
+        -o-transition: all 500ms;
+        transition: all 500ms;
+    }
+
+    .titleunder h2{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+    }
+
+    .persons{
+
+        margin: 20px;
+    }
+    /*-------------------------TEAM--------------------------------*/
 
 }
 
