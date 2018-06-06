@@ -34,24 +34,6 @@
                 </ul>
             </nav>
         </div>
-        <div class="burgericon">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-    <div class="mobilebar">
-        <nav class="mobile-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#company">Company</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#making">The Making</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </div>
 </div>
 
@@ -189,15 +171,11 @@
 <script src="js/scroll.js"></script>
 <script src="js/script.js"></script>
 <script>
-    //var query = Modernizr.mq('(min-width: 1100px)');
-    //if (query) {
-      //  $('#wrapper').fullpage();
-    //}
-    $(document).ready(function () {
-        $('#wrapper').fullpage({
-            responsiveWidth: 1100
-        });
-    });
+
+    if (Modernizr.mq('(min-width: 910px)')) {
+      $('#wrapper').fullpage();
+    }
+
 </script>
 
 </body>

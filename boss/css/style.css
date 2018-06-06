@@ -49,11 +49,16 @@ h1{
     body {
         background-color: white;
     }
+    .content{
+        display: none;
+    }
 
     /*-------------------------HEADER------------------------------*/
+
     /*------------------------MAIN-NAV-----------------------------*/
+
     .topnavbar {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     .main-nav {
@@ -61,7 +66,9 @@ h1{
     }
 
     /*------------------------MAIN-NAV-----------------------------*/
+
     /*--------------------------LOGO-------------------------------*/
+
     .logo-head {
         float: left;
     }
@@ -73,94 +80,70 @@ h1{
     }
 
     /*--------------------------LOGO-------------------------------*/
-    /*-----------------------BURGERICON----------------------------*/
-    .burgericon {
+
+
+    /*-------------------------HEADER------------------------------*/
+
+
+}
+
+@media screen and (min-width: 700px) {
+
+    .wrap div{
+        max-width: 45%;
+        float: left;
+        left: 20px !important;
+    }
+    .acord{
+        max-width: 48%;
+        float: left;
+        top: 70px !important;
+        right: 0;
+    }
+
+    .titlerac h2{
+        font-weight: lighter;
+        padding: 5px 0 3px 8px;
+        margin: 5px 0;
+    }
+    .company{
+        height: auto !important;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+
+}
+
+@media screen and (min-width: 910px) {
+
+    h1{
+        font-size: 80pt;
+    }
+
+    .content{
+        display: block;
+    }
+    /*------------------------MAIN-NAV-----------------------------*/
+
+    .main-nav {
+        display: block;
         float: right;
-        padding: 20px;
-
+        padding: 0 20px 0 0;
     }
 
-    .burgericon div {
-        background-color: black;
-        height: 2px;
-        width: 60px;
-        -webkit-transition: ease-in-out 300ms;
-        -moz-transition: ease-in-out 300ms;
-        -ms-transition: ease-in-out 300ms;
-        -o-transition: ease-in-out 300ms;
-        transition: ease-in-out 300ms;
-    }
-
-    .burgericon div:nth-child(2) {
-        -webkit-transform: translateY(10px);
-        -moz-transform: translateY(10px);
-        -ms-transform: translateY(10px);
-        -o-transform: translateY(10px);
-        transform: translateY(10px);
-    }
-
-    .burgericon div:nth-child(3) {
-        -webkit-transform: translateY(20px);
-        -moz-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-        -o-transform: translateY(20px);
-        transform: translateY(20px);
-    }
-
-    .burgericon.open-nav div {
-        -webkit-transform: rotate(23deg) translateY(8px) translateX(6px);
-        -moz-transform: rotate(23deg) translateY(8px) translateX(6px);
-        -ms-transform: rotate(23deg) translateY(8px) translateX(6px);
-        -o-transform: rotate(23deg) translateY(8px) translateX(6px);
-        transform: rotate(23deg) translateY(8px) translateX(6px);
-    }
-
-    .burgericon.open-nav div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burgericon.open-nav div:nth-child(3) {
-        -webkit-transform: rotate(-23deg) translateY(7px);
-        -moz-transform: rotate(-23deg) translateY(7px);
-        -ms-transform: rotate(-23deg) translateY(7px);
-        -o-transform: rotate(-23deg) translateY(7px);
-        transform: rotate(-23deg) translateY(7px);
-    }
-
-    /*-----------------------BURGERICON----------------------------*/
-    /*-----------------------MOB-NAV-------------------------------*/
-    .mobilebar {
-        width: 100%;
-        background-color: white;
-        display: none;
-    }
-
-    .mobile-nav {
-        background-color: white;
-    }
-
-    .mobile-nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        overflow-y: auto;
-    }
-
-    .mobile-nav ul li {
+    .main-nav ul li {
+        float: left;
         list-style: none;
-        text-align: center;
         font-family: 'Sunflower', sans-serif;
         font-size: 160%;
-        text-decoration: none;
-        padding: 0 0 10px 0;
+        padding: 18px 10px 10px 25px;
+        font-weight: 100;
     }
 
-    .mobile-nav ul li:first-child {
-        padding-top: 10px;
-    }
+    /*------------------------MAIN-NAV-----------------------------*/
 
-    /*-----------------------MOB-NAV-------------------------------*/
-    /*-------------------------HEADER------------------------------*/
     /*-------------------------BIG-IMG-----------------------------*/
     .bigImage {
         background-image: url("../images/content/headimg.jpg");
@@ -171,24 +154,24 @@ h1{
     .bigImage p{
         text-align: right;
         font-family: 'Sunflower', sans-serif;
-        font-size: 18pt;
-        margin-top: -18px;
+        font-size: 25pt;
+        margin-top: -25px;
     }
     .bigImage .claimer{
         margin-right: 20px;
     }
     .bigImage .hoehe{
-        height: 125px;
+        height: 180px;
         width: 2px;
         background-color: black;
         margin-top: -10px;
         float: right;
-
     }
+
     .bigImage .text{
         padding-right: 20px;
-
     }
+
     /*-------------------------BIG-IMG-----------------------------*/
 
     /*-------------------------COMPANY-----------------------------*/
@@ -196,7 +179,6 @@ h1{
         background-image: url("../images/content/company/company.jpg");
         background-size: cover;
         background-position: right;
-        height: 1100px !important;
     }
     .acord{
         position: absolute;
@@ -268,7 +250,7 @@ h1{
         width: calc(100% - 40px);
     }
     .cardimg .text{
-         display: none;
+        display: none;
         max-width: calc(100% - 40px);
     }
     .cardimg .text p{
@@ -325,81 +307,7 @@ h1{
     }
     /*-------------------------TEAM--------------------------------*/
 
-}
 
-@media screen and (min-width: 700px) {
-    .wrap div{
-        max-width: 45%;
-        float: left;
-        left: 20px !important;
-    }
-    .acord{
-        max-width: 48%;
-        float: left;
-        top: 70px !important;
-        right: 0;
-    }
-
-    .titlerac h2{
-        font-weight: lighter;
-        padding: 5px 0 3px 8px;
-        margin: 5px 0;
-    }
-    .company{
-        height: auto !important;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    h1{
-        font-size: 80pt;
-    }
-
-    .bigImage p{
-        text-align: right;
-        font-family: 'Sunflower', sans-serif;
-        font-size: 25pt;
-        margin-top: -25px;
-    }
-    .bigImage .claimer{
-        margin-right: 20px;
-    }
-    .bigImage .hoehe{
-        height: 180px;
-        width: 2px;
-        background-color: black;
-        margin-top: -10px;
-        float: right;
-
-    }
-    .bigImage .text{
-        padding-right: 20px;
-    }
-}
-
-@media screen and (min-width: 909px) {
-
-    /*------------------------MAIN-NAV-----------------------------*/
-    .topnavbar {
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .main-nav {
-        display: block;
-        float: right;
-        padding: 0 20px 0 0;
-    }
-
-    .main-nav ul li {
-        float: left;
-        list-style: none;
-        font-family: 'Sunflower', sans-serif;
-        font-size: 160%;
-        padding: 18px 10px 10px 25px;
-        font-weight: 100;
-    }
-
-    /*------------------------MAIN-NAV-----------------------------*/
     /*-------------------------MOB-NAV-----------------------------*/
     .burgericon {
         display: none;

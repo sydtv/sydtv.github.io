@@ -1,37 +1,5 @@
-var important = "!important";
-
-function hideMobNav() {
-    $('.mobilebar, .burgericon').removeClass('open-nav');
-    $('.mobilebar').slideUp();
-}
-
-function showMobNav() {
-    $('.mobilebar, .burgericon').addClass('open-nav');
-    $('.mobilebar').slideDown();
-}
-
-
 (function ($) {
 
-    //HEIGHT MOBILE-NAV///////////////////////////////////
-
-    var heightNav = $('.topnavbar').height();
-    var heightWindow = $(window).height();
-    var heightDropdown = heightWindow - heightNav;
-
-    $('.mobile-nav ul').css('height', heightDropdown);
-    $('.bigImage').css('height', heightWindow);
-
-    $(window).resize(function () {
-        var heightNav = $('.topnavbar').height();
-        var heightWindow = $(window).height();
-        var heightDropdown = heightWindow - heightNav;
-
-        $('.mobile-nav ul').css('height', heightDropdown);
-        $('.bigImage').css('height', heightWindow);
-    });
-
-    ///////////////////////////////////////////////////
 
     //HEIGHT Card IMG//////////////////////////////////
 
@@ -47,24 +15,6 @@ function showMobNav() {
 
     ///////////////////////////////////////////////////
 
-    //EINMITTEN/////////////////////////////////////////
-
-    var widthCardimg = $('.titler').width();
-    var mittler = widthCardimg /= 2;
-    var calcer = "calc(50% - " + mittler + "px)";
-    $('.titler').css('left', calcer);
-    $('.cardimg').css('left', calcer);
-
-
-    $(window).resize(function () {
-        var widthCardimg = $('.titler').width();
-        var mittler = widthCardimg /= 2;
-        var calcer = "calc(50% - " + mittler + "px)";
-        $('.titler').css('left', calcer);
-        $('.cardimg').css('left', calcer);
-
-    });
-    ////////////////////////////////////////////////////
 
     //HEIGHT TEXT//////////////////////////////////
 
@@ -99,18 +49,6 @@ function showMobNav() {
     ///////////////////////////////////////////////////
 
 
-    $('.burgericon').click(function () {
-        if ($('.mobilebar').hasClass('open-nav')) {
-            hideMobNav();
-        } else {
-            showMobNav();
-        }
-    });
-
-    $('.mobile-nav ul li').click(function () {
-        hideMobNav();
-    });
-
     //Card IMG////////////////////////////////////////////
 
     $('.cardimg').click(function () {
@@ -133,7 +71,3 @@ function showMobNav() {
 
 
 }(jQuery));
-$('.underline').appear(function() {
-   // $(this).css('margin-left', '0');
-    alert("hello");
-});
