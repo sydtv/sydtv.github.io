@@ -52,6 +52,13 @@ h1{
     .content{
         display: none;
     }
+    .mobile{
+        display: block;
+    }
+    .mobile p{
+        margin-top: 100px;
+        margin-left: 100px;
+    }
 
     /*-------------------------HEADER------------------------------*/
 
@@ -87,41 +94,17 @@ h1{
 
 }
 
-@media screen and (min-width: 700px) {
-
-    .wrap div{
-        max-width: 45%;
-        float: left;
-        left: 20px !important;
-    }
-    .acord{
-        max-width: 48%;
-        float: left;
-        top: 70px !important;
-        right: 0;
-    }
-
-    .titlerac h2{
-        font-weight: lighter;
-        padding: 5px 0 3px 8px;
-        margin: 5px 0;
-    }
-    .company{
-        height: auto !important;
-    }
-}
-
-@media screen and (min-width: 800px) {
 
 
-}
 
 @media screen and (min-width: 910px) {
 
     h1{
         font-size: 80pt;
     }
-
+    .mobile{
+        display: none;
+    }
     .content{
         display: block;
     }
@@ -180,10 +163,19 @@ h1{
         background-size: cover;
         background-position: right;
     }
+    .wrap div{
+        max-width: 45%;
+        float: left;
+        left: 20px !important;
+    }
     .acord{
         position: absolute;
         width: calc(100% - 40px);
         padding: 5px 20px;
+        max-width: 48%;
+        float: left;
+        top: 70px !important;
+        right: 0;
     }
     .acord li span h2{
         background-color: white;
@@ -239,7 +231,7 @@ h1{
     .titlerac h2{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
-        padding: 2px 0 0 10px;
+        padding: 5px 0 3px 8px;
         margin: 5px 0;
     }
     .cardimg{

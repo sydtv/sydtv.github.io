@@ -1,4 +1,4 @@
-(function ($) {
+ (function ($) {
 
 
     //HEIGHT Card IMG//////////////////////////////////
