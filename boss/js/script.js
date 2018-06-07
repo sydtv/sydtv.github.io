@@ -2,7 +2,7 @@ var heightWindow = $(window).innerHeight() + "px";
 
 (function ($) {
 
-     //HEIGHT Card IMG//////////////////////////////////
+    //HEIGHT MOBILE//////////////////////////////////////
 
     $('.mobile').css('height', heightWindow);
 
@@ -12,7 +12,7 @@ var heightWindow = $(window).innerHeight() + "px";
         $('.mobile').css('height', heightWindow);
     });
 
-     ///////////////////////////////////////////////////
+    ///////////////////////////////////////////////////
 
 
     //HEIGHT Card IMG//////////////////////////////////
@@ -66,19 +66,27 @@ var heightWindow = $(window).innerHeight() + "px";
     //Card IMG////////////////////////////////////////////
 
     $('.cardimg').click(function () {
-       $('.cardimg .text').toggleClass('visible');
-       $('.cardimg img').toggleClass('visible');
+        $('.cardimg .text').toggleClass('visible');
+        $('.cardimg img').toggleClass('visible');
     });
-
 
 
     //////////////////////////////////////////////////////
 
     // Accordion//////////////////////////////////////////
 
-    $(".acord > li > div").click(function() {
+    $(".acord > li > div").click(function () {
         $(this).closest('li').siblings().find('div').removeClass('active').next('div').slideUp(250);
         $(this).toggleClass("active").next('div').slideToggle(250);
+    });
+
+    ///////////////////////////////////////////////////
+
+    //Accordion//////////////////////////////////////////
+
+    $(".boards > li > div").click(function () {
+        $(this).closest('li').siblings().find('div').removeClass('active').next('div').removeClass('activetext');
+        $(this).toggleClass("active").next('div').toggleClass('activetext');
     });
 
     ///////////////////////////////////////////////////
