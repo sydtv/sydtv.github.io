@@ -69,14 +69,16 @@ h1 {
         background-position: center;
     }
 
-    .mobile .text{
+    .mobile .text {
         height: 100%;
         background-color: rgba(255, 255, 255, 0.7);
     }
-    .mobile .butmut{
+
+    .mobile .butmut {
         position: relative;
         top: calc(50% - 46px);
     }
+
     .mobile h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
@@ -84,7 +86,7 @@ h1 {
         padding-bottom: 10px;
     }
 
-    .mobile .button{
+    .mobile .button {
         width: 10em;
         margin: 0 auto;
         background: white;
@@ -92,7 +94,8 @@ h1 {
         cursor: pointer;
         padding: 10px;
     }
-    .mobile .button h2{
+
+    .mobile .button h2 {
         padding-bottom: 0px;
     }
 
@@ -128,6 +131,7 @@ h1 {
         display: block;
     }
 
+    /*/////HEAD////////////////////////////////////////////////////////////*/
     .main-nav {
         display: block;
         float: right;
@@ -143,6 +147,8 @@ h1 {
         font-weight: 100;
     }
 
+    /*/////HEAD////////////////////////////////////////////////////////////*/
+    /*/////BIGIMG//////////////////////////////////////////////////////////*/
     .bigImage {
         background-image: url("../images/content/headimg.jpg");
         background-size: cover;
@@ -172,6 +178,8 @@ h1 {
         padding-right: 20px;
     }
 
+    /*/////BIGIMG//////////////////////////////////////////////////////////*/
+    /*/////COMPANY/////////////////////////////////////////////////////////*/
     .company {
         background-image: url("../images/content/company/company.jpg");
         background-size: cover;
@@ -278,6 +286,8 @@ h1 {
         opacity: 0.60000002384185791015625;
     }
 
+    /*/////COMPANY/////////////////////////////////////////////////////////*/
+    /*/////TEAM////////////////////////////////////////////////////////////*/
     .team {
         background-image: url("../images/content/team/bg.jpg");
         background-size: cover;
@@ -287,6 +297,7 @@ h1 {
     .wrapperteam {
         position: absolute;
         top: 80px;
+        width: 100%;
     }
 
     .titleunder {
@@ -308,13 +319,23 @@ h1 {
     .persons {
         margin: 20px;
     }
-
-    .burgericon {
-        display: none;
+    .pers{
+        width: calc(33% - 20px);
+        float: left;
+        background: rgba(255, 255, 255, 0.6);
+        margin: 0 10px;
     }
-
-    .mobilebar {
-        display: none !important;
+    .pers:first-child{
+        margin-left: 0;
+    }
+    .pers:nth-child(2){
+        width: 33%;
+    }
+    .pers:nth-child(3){
+        margin-right: 0;
+    }
+    .persimg img{
+        width: calc(100% - 20px);
     }
 }
 
