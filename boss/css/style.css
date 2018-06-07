@@ -11,21 +11,24 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
 }
-#mfPreviewBar{
+
+#mfPreviewBar {
     display: none;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
-h1{
+h1 {
     font-family: 'Remachine Script';
     font-weight: lighter;
     text-align: right;
     font-size: 50pt;
 }
+
 .cf:after {
     content: '';
     display: table;
@@ -33,7 +36,7 @@ h1{
     float: none;
 }
 
-.visible{
+.visible {
     display: block !important;
 }
 
@@ -49,20 +52,49 @@ h1{
     body {
         background-color: white;
     }
-    .content{
+
+    .content {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: block;
-    }
-    .mobile p{
-        margin-top: 100px;
-        margin-left: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../images/content/mobile/bg.jpg");
+        background-size: cover;
+        background-position: center;
     }
 
-    /*-------------------------HEADER------------------------------*/
+    .mobile .text{
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    .mobile .butmut{
+        position: relative;
+        top: calc(50% - 46px);
+    }
+    .mobile h2 {
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        text-align: center;
+        padding-bottom: 10px;
+    }
 
-    /*------------------------MAIN-NAV-----------------------------*/
+    .mobile .button{
+        width: 10em;
+        margin: 0 auto;
+        background: white;
+        border: solid 1px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .mobile .button h2{
+        padding-bottom: 0px;
+    }
 
     .topnavbar {
         background-color: rgba(255, 255, 255, 0.5);
@@ -71,10 +103,6 @@ h1{
     .main-nav {
         display: none;
     }
-
-    /*------------------------MAIN-NAV-----------------------------*/
-
-    /*--------------------------LOGO-------------------------------*/
 
     .logo-head {
         float: left;
@@ -85,30 +113,20 @@ h1{
         height: auto;
         padding: 12px 0 8px 15px;
     }
-
-    /*--------------------------LOGO-------------------------------*/
-
-
-    /*-------------------------HEADER------------------------------*/
-
-
 }
 
-
-
-
 @media screen and (min-width: 910px) {
-
-    h1{
+    h1 {
         font-size: 80pt;
     }
-    .mobile{
+
+    .mobile {
         display: none;
     }
-    .content{
+
+    .content {
         display: block;
     }
-    /*------------------------MAIN-NAV-----------------------------*/
 
     .main-nav {
         display: block;
@@ -125,25 +143,24 @@ h1{
         font-weight: 100;
     }
 
-    /*------------------------MAIN-NAV-----------------------------*/
-
-    /*-------------------------BIG-IMG-----------------------------*/
     .bigImage {
         background-image: url("../images/content/headimg.jpg");
         background-size: cover;
         background-position: left;
     }
 
-    .bigImage p{
+    .bigImage p {
         text-align: right;
         font-family: 'Sunflower', sans-serif;
         font-size: 25pt;
         margin-top: -25px;
     }
-    .bigImage .claimer{
+
+    .bigImage .claimer {
         margin-right: 20px;
     }
-    .bigImage .hoehe{
+
+    .bigImage .hoehe {
         height: 180px;
         width: 2px;
         background-color: black;
@@ -151,24 +168,23 @@ h1{
         float: right;
     }
 
-    .bigImage .text{
+    .bigImage .text {
         padding-right: 20px;
     }
 
-    /*-------------------------BIG-IMG-----------------------------*/
-
-    /*-------------------------COMPANY-----------------------------*/
-    .company{
+    .company {
         background-image: url("../images/content/company/company.jpg");
         background-size: cover;
         background-position: right;
     }
-    .wrap div{
+
+    .wrap div {
         max-width: 45%;
         float: left;
         left: 20px !important;
     }
-    .acord{
+
+    .acord {
         position: absolute;
         width: calc(100% - 40px);
         padding: 5px 20px;
@@ -177,10 +193,12 @@ h1{
         top: 70px !important;
         right: 0;
     }
-    .acord li span h2{
+
+    .acord li span h2 {
         background-color: white;
     }
-    .titler{
+
+    .titler {
         position: absolute;
         top: 80px;
         height: 35px;
@@ -188,119 +206,109 @@ h1{
         background: white;
         left: calc(50% - 45%);
     }
-    .titlerac{
+
+    .titlerac {
         height: 35px;
         width: 100%;
         background: white;
         cursor: pointer;
     }
-    .titlerac svg{
+
+    .titlerac svg {
         float: right;
         margin-top: -32px;
         margin-right: 10px;
-        -webkit-transition: all ease-in-out 250ms;
-        -moz-transition: all ease-in-out 250ms;
-        -ms-transition: all ease-in-out 250ms;
-        -o-transition: all ease-in-out 250ms;
-        transition: all ease-in-out 250ms;
+        transition: all 250ms ease-in-out;
     }
-    .titlerac.active svg{
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
 
+    .titlerac.active svg {
+        transform: rotate(90deg);
     }
-    .dropacc{
+
+    .dropacc {
         display: none;
-        background: rgba(255,255,255, 0.6);
+        background: rgba(255, 255, 255, 0.6);
         padding: 10px;
         margin-top: -5px;
     }
-    .dropacc p{
+
+    .dropacc p {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         padding: 10px;
     }
-    .titler h2{
+
+    .titler h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         margin: 2px 0 0 10px;
     }
-    .titlerac h2{
+
+    .titlerac h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         padding: 5px 0 3px 8px;
         margin: 5px 0;
     }
-    .cardimg{
+
+    .cardimg {
         position: absolute;
         top: 115px;
         left: calc(50% - 45%);
-        background: rgba(255,255,255, 0.6);
+        background: rgba(255, 255, 255, 0.6);
         width: calc(100% - 40px);
     }
-    .cardimg .text{
+
+    .cardimg .text {
         display: none;
         max-width: calc(100% - 40px);
     }
-    .cardimg .text p{
+
+    .cardimg .text p {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         padding: 10px;
-
     }
-    .cardimg img{
+
+    .cardimg img {
         width: calc(100% - 20px);
         display: none;
         position: relative;
         padding: 10px;
-        opacity: 0.6;
+        opacity: 0.60000002384185791015625;
     }
-    /*-------------------------COMPANY-----------------------------*/
 
-
-    /*-------------------------TEAM--------------------------------*/
-    .team{
+    .team {
         background-image: url("../images/content/team/bg.jpg");
         background-size: cover;
         background-position: center bottom;
     }
-    .wrapperteam{
+
+    .wrapperteam {
         position: absolute;
         top: 80px;
     }
-    .titleunder{
+
+    .titleunder {
         margin: 20px;
     }
 
-    .titleunder .underline{
+    .titleunder .underline {
         width: 5rem;
         height: 2px;
         background-color: black;
         margin: 2px 0 0 0;
-        margin-left: -100px;
-        -webkit-transition: all 500ms;
-        -moz-transition: all 500ms ;
-        -ms-transition: all 500ms;
-        -o-transition: all 500ms;
-        transition: all 500ms;
     }
 
-    .titleunder h2{
+    .titleunder h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
     }
 
-    .persons{
-
+    .persons {
         margin: 20px;
     }
-    /*-------------------------TEAM--------------------------------*/
 
-
-    /*-------------------------MOB-NAV-----------------------------*/
     .burgericon {
         display: none;
     }
@@ -308,22 +316,20 @@ h1{
     .mobilebar {
         display: none !important;
     }
-
-    /*-------------------------MOB-NAV-----------------------------*/
-
 }
 
 @media screen and (min-width: 1100px) {
-
     .container {
         max-width: 1100px;
         margin: 0 auto;
         position: relative;
     }
-    .company .container{
+
+    .company .container {
         top: -400px;
     }
-    .company.cardimg .text p{
+
+    .company.cardimg .text p {
         font-size: 23px;
     }
 }

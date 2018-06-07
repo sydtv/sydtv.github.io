@@ -1,4 +1,18 @@
- (function ($) {
+var heightWindow = $(window).innerHeight() + "px";
+
+(function ($) {
+
+     //HEIGHT Card IMG//////////////////////////////////
+
+    $('.mobile').css('height', heightWindow);
+
+    $(window).resize(function () {
+        var heightWindow = $(window).innerHeight() + "px";
+
+        $('.mobile').css('height', heightWindow);
+    });
+
+     ///////////////////////////////////////////////////
 
 
     //HEIGHT Card IMG//////////////////////////////////
