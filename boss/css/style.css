@@ -320,30 +320,56 @@ h1 {
         display: flex;
         justify-content: space-between;
     }
-    .pers{
+
+    .pers {
         width: 30%;
         float: left;
         background: rgba(255, 255, 255, 0.6);
     }
-    .pers .undertext{
+
+    .pers .undertext {
         padding: 10px;
         background-color: white;
     }
-    .pers .undertext p{
+
+    .pers .undertext p {
         text-align: center;
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 20px;
     }
-    .persimg img{
+
+    .persimg img {
         width: calc(100% - 20px);
         padding: 10px 10px 5px 10px;
         opacity: 0.9;
     }
+
     .pers1 img:hover,
     .pers2 img:hover,
-    .pers3 img:hover{
+    .pers3 img:hover {
         opacity: 1;
+    }
+
+    /*/////TEAM////////////////////////////////////////////////////////////*/
+    /*/////PRODUCTS////////////////////////////////////////////////////////*/
+    .products{
+        background-image: url("../images/content/boards/bg.jpg");
+        background-size: cover;
+        background-position: bottom center;
+    }
+    .boards{
+        width: 66%;
+    }
+    .boards img {
+        width: 140px;
+    }
+    .sand {
+        position: absolute;
+        bottom: -5px;
+    }
+    .sandbode{
+        width: 120%;
     }
 }
 
