@@ -224,7 +224,7 @@ h1 {
 
     .titlerac svg {
         float: right;
-        margin-top: -32px;
+        margin-top: -37px;
         margin-right: 10px;
         transition: all 250ms ease-in-out;
     }
@@ -237,7 +237,7 @@ h1 {
         display: none;
         background: rgba(255, 255, 255, 0.6);
         padding: 10px;
-        margin-top: -5px;
+        width: calc(100% - 20px);
     }
 
     .dropacc p {
@@ -295,8 +295,6 @@ h1 {
     }
 
     .wrapperteam {
-        position: absolute;
-        top: 80px;
         width: 100%;
     }
 
@@ -314,28 +312,38 @@ h1 {
     .titleunder h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
+        font-size: 180%;
     }
 
     .persons {
-        margin: 20px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
     }
     .pers{
-        width: calc(33% - 20px);
+        width: 30%;
         float: left;
         background: rgba(255, 255, 255, 0.6);
-        margin: 0 10px;
     }
-    .pers:first-child{
-        margin-left: 0;
+    .pers .undertext{
+        padding: 10px;
+        background-color: white;
     }
-    .pers:nth-child(2){
-        width: 33%;
-    }
-    .pers:nth-child(3){
-        margin-right: 0;
+    .pers .undertext p{
+        text-align: center;
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
     }
     .persimg img{
         width: calc(100% - 20px);
+        padding: 10px 10px 5px 10px;
+        opacity: 0.9;
+    }
+    .pers1 img:hover,
+    .pers2 img:hover,
+    .pers3 img:hover{
+        opacity: 1;
     }
 }
 

@@ -76,8 +76,8 @@ var heightWindow = $(window).innerHeight() + "px";
 
     // Accordion//////////////////////////////////////////
 
-    $(".acord > li > span").click(function() {
-        $(this).closest('li').siblings().find('span').removeClass('active').next('div').slideUp(250);
+    $(".acord > li > div").click(function() {
+        $(this).closest('li').siblings().find('div').removeClass('active').next('div').slideUp(250);
         $(this).toggleClass("active").next('div').slideToggle(250);
     });
 
