@@ -85,8 +85,8 @@ var heightWindow = $(window).innerHeight() + "px";
     //Accordion//////////////////////////////////////////
 
     $(".boards > li > div").click(function () {
-        $(this).closest('li').siblings().find('div').removeClass('active').next('div').removeClass('activetext');
-        $(this).toggleClass("active").next('div').toggleClass('activetext');
+        $(this).closest('li').siblings().find('div').removeClass('activeboard').next('div').removeClass('activetext');
+        $('.boards li div img').toggleClass("activeboard").next('div').toggleClass('activetext');
     });
 
     ///////////////////////////////////////////////////

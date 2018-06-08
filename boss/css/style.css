@@ -48,6 +48,8 @@ h1 {
     z-index: 99999;
 }
 
+
+
 @media screen and (min-width: 100px) {
     body {
         background-color: white;
@@ -118,7 +120,16 @@ h1 {
     }
 }
 
-@media screen and (min-width: 910px) {
+@media screen and (min-height: 100px) {
+    .content {
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 910px) and (min-height: 610px){
     h1 {
         font-size: 80pt;
     }
@@ -353,48 +364,78 @@ h1 {
 
     /*/////TEAM////////////////////////////////////////////////////////////*/
     /*/////PRODUCTS////////////////////////////////////////////////////////*/
-    .products{
+    .products {
         background-image: url("../images/content/boards/bg.jpg");
         background-size: cover;
         background-position: bottom center;
     }
-    .boards{
-        width: 50%;
-        margin-left: 45%;
-        height: 974px;
-        position: absolute;
-        top: 281px;
+
+    .boards {
+        height: 100vh;
+        width: 60%;
+        max-width: 60%;
+        float: right;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
-    .bds{
-       float: left;
-        width: 18.9%;
+
+    .boards li {
+        float: left;
+        margin-right: -45px;
+        margin-bottom: 75px;
+    }
+
+    .boards li:last-child {
+        margin-right: 0;
+    }
+    .activeboard{
+        opacity: 1;
+        z-index: 9999;
     }
     .boards img {
-        width: 140px;
-        position: relative;
+        width: 122px;
     }
-    .b1{
-        margin-top: 205px;
+    .btext{
+        margin-left: 10px;
     }
-    .b2{
-        margin-top: 125px;
+    .btext h2{
+        background-color: white;
+        padding: 10px;
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 180%;
     }
-    .b3{
-        margin-top: 155px;
+
+    .btext p{
+        background: rgba(255,255,255, 0.6);
+        padding: 10px;
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
     }
-    .b4{
-        margin-top: 45px;
+
+    .bt {
+        position: absolute;
+        width: 40%;
+        top: calc(50% - 214px);
+        display: none;
+        z-index: 1;
     }
-    .b5{
-        margin-top: 115px;
+    .activetext{
+        display: block;
     }
     .sand {
+        height: 200px;
         position: absolute;
-        bottom: -5px;
+        bottom: 0;
+        left: 0;
     }
-    .sandbode{
-        width: 120%;
-        max-height: 200px;
+
+    .sandbode {
+        width: 100vw;
+        height: 200px;
+        position: relative;
     }
 }
 
@@ -412,7 +453,7 @@ h1 {
     .company.cardimg .text p {
         font-size: 23px;
     }
-    .boards{
-        top: -175px;
+    .boards img {
+        width: 140px;
     }
 }
