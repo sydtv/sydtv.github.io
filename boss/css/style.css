@@ -48,8 +48,6 @@ h1 {
     z-index: 99999;
 }
 
-
-
 @media screen and (min-width: 100px) {
     body {
         background-color: white;
@@ -124,12 +122,13 @@ h1 {
     .content {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: block;
     }
 }
 
-@media screen and (min-width: 910px) and (min-height: 610px){
+@media screen and (min-width: 910px) and (min-height: 610px) {
     h1 {
         font-size: 80pt;
     }
@@ -389,17 +388,34 @@ h1 {
     .boards li:last-child {
         margin-right: 0;
     }
-    .activeboard{
-        opacity: 1;
-        z-index: 9999;
+
+    .activeboard {
+        width: 130px !important;
+        opacity: 1 !important;
+        z-index: 999 !important;
+        -webkit-filter: brightness(1) !important;
+        filter: brightness(1)!important;
     }
+
     .boards img {
         width: 122px;
+        position: relative;
+        z-index: 1;
+        opacity: 0.9;
+        -webkit-transition: all 500ms;
+        -moz-transition: all 500ms;
+        -ms-transition: all 500ms;
+        -o-transition: all 500ms;
+        transition: all 500ms;
+        -webkit-filter: brightness(0.7);
+        filter: brightness(0.7);
     }
-    .btext{
+
+    .btext {
         margin-left: 10px;
     }
-    .btext h2{
+
+    .btext h2 {
         background-color: white;
         padding: 10px;
         font-family: 'Sunflower', sans-serif;
@@ -407,29 +423,36 @@ h1 {
         font-size: 180%;
     }
 
-    .btext p{
-        background: rgba(255,255,255, 0.6);
+    .btext p {
+        background: rgba(255, 255, 255, 0.6);
         padding: 10px;
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 20px;
     }
 
-    .bt {
+    .bt1,
+    .bt2,
+    .bt3,
+    .bt4,
+    .bt5 {
         position: absolute;
         width: 40%;
         top: calc(50% - 214px);
         display: none;
         z-index: 1;
     }
-    .activetext{
+
+    .activetext {
         display: block;
     }
+
     .sand {
         height: 200px;
         position: absolute;
         bottom: 0;
         left: 0;
+        z-index: 2;
     }
 
     .sandbode {
@@ -453,7 +476,12 @@ h1 {
     .company.cardimg .text p {
         font-size: 23px;
     }
+
     .boards img {
         width: 140px;
+    }
+
+    .activeboard {
+        width: 150px !important;
     }
 }

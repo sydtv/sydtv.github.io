@@ -83,11 +83,66 @@ var heightWindow = $(window).innerHeight() + "px";
     ///////////////////////////////////////////////////
 
     //Accordion//////////////////////////////////////////
+    function board1 () {
+        if ($('.b1 img').hasClass('activeboard')) {
+            $('.bt1').addClass('activetext');
+            $('.bt2').removeClass('activetext');
+            $('.bt3').removeClass('activetext');
+            $('.bt4').removeClass('activetext');
+            $('.bt5').removeClass('activetext');
+        }
+    }
 
-    $(".boards > li > div").click(function () {
-        $(this).closest('li').siblings().find('div').removeClass('activeboard').next('div').removeClass('activetext');
-        $('.boards li div img').toggleClass("activeboard").next('div').toggleClass('activetext');
+    function board2 () {
+        if ($('.b2 img').hasClass('activeboard')) {
+            $('.bt2').addClass('activetext');
+            $('.bt1').removeClass('activetext');
+            $('.bt3').removeClass('activetext');
+            $('.bt4').removeClass('activetext');
+            $('.bt5').removeClass('activetext');
+        }
+    }
+
+    function board3 () {
+        if ($('.b3 img').hasClass('activeboard')) {
+            $('.bt3').addClass('activetext');
+            $('.bt2').removeClass('activetext');
+            $('.bt1').removeClass('activetext');
+            $('.bt4').removeClass('activetext');
+            $('.bt5').removeClass('activetext');
+        }
+    }
+
+    function board4 () {
+        if ($('.b4 img').hasClass('activeboard')) {
+            $('.bt4').addClass('activetext');
+            $('.bt2').removeClass('activetext');
+            $('.bt3').removeClass('activetext');
+            $('.bt1').removeClass('activetext');
+            $('.bt5').removeClass('activetext');
+        }
+    }
+
+    function board5 () {
+        if ($('.b5 img').hasClass('activeboard')) {
+            $('.bt5').addClass('activetext');
+            $('.bt2').removeClass('activetext');
+            $('.bt3').removeClass('activetext');
+            $('.bt4').removeClass('activetext');
+            $('.bt1').removeClass('activetext');
+        }
+    }
+    $(".boards > li > div > img").click(function () {
+        $(this).closest('li').siblings().find('img').removeClass('activeboard');
+        $(this).addClass("activeboard");
+        board1();
+        board2();
+        board3();
+        board4();
+        board5();
     });
+
+
 
     ///////////////////////////////////////////////////
 
