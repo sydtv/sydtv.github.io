@@ -392,7 +392,7 @@ h1 {
     .activeboard {
         width: 130px !important;
         opacity: 1 !important;
-        z-index: 999 !important;
+        z-index: 2 !important;
         -webkit-filter: brightness(1) !important;
         filter: brightness(1)!important;
     }
@@ -452,7 +452,7 @@ h1 {
         position: absolute;
         bottom: 0;
         left: 0;
-        z-index: 2;
+        z-index: 3;
     }
 
     .sandbode {
