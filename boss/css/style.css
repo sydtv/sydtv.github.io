@@ -460,6 +460,60 @@ h1 {
         height: 200px;
         position: relative;
     }
+    /*/////MAKING////////////////////////////////////////////////////////*/
+
+    .makecats{
+        height: 50%;
+        width: 100%;
+        margin-top: -20px;
+        background: #adadad;
+    }
+    .makecats .container{
+        position: relative;
+        top: calc(50% - 111px);
+    }
+    .catsmats svg{
+        float: left;
+        width: 45px;
+    }
+    .catsmats h2{
+        padding: 10px;
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 160%;
+    }
+    .catsmats .underline {
+        width: 5rem;
+        height: 2px;
+        background-color: black;
+        margin: 2px 0 15px 0;
+    }
+    .catsmats{
+        margin: 40px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .store,
+    .office,
+    .production,
+    .woodery{
+        float: left;
+    }
+    .store h2,
+    .office h2,
+    .production h2,
+    .woodery h2{
+        float: left;
+    }
+    .makecats .titleunder {
+        margin: 20px 20px -25px 20px;
+    }
+    #chartdiv {
+        width: 100%;
+        height: 50%;
+    }
+    /*/////MAKING////////////////////////////////////////////////////////*/
+
 }
 
 @media screen and (min-width: 1100px) {
