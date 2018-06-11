@@ -335,6 +335,9 @@ h1 {
         width: 30%;
         float: left;
         background: rgba(255, 255, 255, 0.6);
+        -webkit-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
+        -moz-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
+        box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71)
     }
 
     .pers .undertext {
@@ -411,9 +414,7 @@ h1 {
         filter: brightness(0.7);
     }
 
-    .btext {
-        margin-left: 10px;
-    }
+
 
     .btext h2 {
         background-color: white;
@@ -445,6 +446,9 @@ h1 {
 
     .activetext {
         display: block;
+        -webkit-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
+        -moz-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
+        box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
     }
 
     .sand {
@@ -474,6 +478,9 @@ h1 {
     }
     .makecats .bg{
         background: rgba(255,255,255,0.8);
+        -webkit-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
+        -moz-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
+        box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
     }
     .makecats .container{
         position: relative;

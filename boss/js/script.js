@@ -132,7 +132,7 @@ var heightWindow = $(window).innerHeight() + "px";
             $('.bt1').removeClass('activetext');
         }
     }
-    $(".boards > li > div > img").click(function () {
+    $(".boards > li > div > img").hover(function () {
         $(this).closest('li').siblings().find('img').removeClass('activeboard');
         $(this).addClass("activeboard");
         board1();
