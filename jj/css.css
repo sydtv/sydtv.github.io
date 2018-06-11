@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    padding-top: 40vh;
+}
+.headerbild{
+    height: 80vh;
+    width: 100vw;
+}
