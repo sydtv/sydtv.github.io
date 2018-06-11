@@ -1,12 +1,134 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #171515;
+}
+.container{
+    margin: 0 150px;
+}
+.clearfix{
+    float: none;
+    clear: both;
 }
 h2{
     text-align: center;
-    padding-top: 40vh;
+    padding-top: calc(30vh - 23.5px);
+    font-weight: 100;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h4{
+    font-weight: 100;
+    font-size: 35px;
+}
+.line{
+    width: 5rem;
+    height: 1px;
+    background-color: white;
 }
 .headerbild{
-    height: 80vh;
-    width: 100vw;
+    height: 90vh;
+    width: 100%;
+    background: url("images/bgheader.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.headerbild p{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+.navbar{
+    height: 10vh;
+    background: #171515;
+}
+.fixed-nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+.logo{
+    padding-top: calc(5vh - 22.5px);
+    float: left;
+}
+.categories{
+    float: right;
+    width: 40%;
+}
+.categories ul{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+.categories ul li{
+    float: left;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.story{
+    background-color: #171515;
+}
+.story img{
+    width: 33%;
+    float: left;
+}
+.story .text{
+    color: white;
+    max-width: 66%;
+    float: right;
+}
+.story .text h3{
+    margin-left: 20%;
+}
+.story .text h4{
+    width: 70%;
+    margin-top: 30px;
+}
+.story .text h3 .line{
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.story .text h4 .line{
+    margin-left: 35%;
+    margin-top: 20px;
+}
+.twospal p{
+    padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.leftt{
+    float: left;
+    text-align: right;
+    padding-right: 40px;
+}
+.rightt{
+    float: left;
+    text-align: left;
+    margin-top: -20px;
+}
+.twospal{
+    margin-top: 30px;
+    margin-left: 75px;
 }
