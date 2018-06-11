@@ -82,7 +82,7 @@ var heightWindow = $(window).innerHeight() + "px";
 
     ///////////////////////////////////////////////////
 
-    //Accordion//////////////////////////////////////////
+    //Boards///////////////////////////////////////////
     function board1 () {
         if ($('.b1 img').hasClass('activeboard')) {
             $('.bt1').addClass('activetext');

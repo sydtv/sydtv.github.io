@@ -10,7 +10,8 @@ var planeSVG = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -
  */
 var map = AmCharts.makeChart( "chartdiv", {
     "type": "map",
-    "theme": "light",
+    "theme": "",
+    "alpha": 1,
 
 
     "dataProvider": {
@@ -18,17 +19,18 @@ var map = AmCharts.makeChart( "chartdiv", {
         "zoomLevel": 3.5,
         "zoomLongitude": -55,
         "zoomLatitude": 42,
+        "alpha": 1,
 
         "lines": [ {
             "id": "line1",
             "arc": -0.85,
-            "alpha": 0.3,
+            "alpha": 1,
             "latitudes": [ 48.8567, 43.8163, 34.3, 23 ],
             "longitudes": [ 2.3510, -79.4287, -118.15, -82 ]
         }, {
             "id": "line2",
-            "alpha": 0,
-            "color": "#505050",
+            "alpha": 1,
+            "color": "#000000",
             "latitudes": [ 48.8567, 43.8163, 34.3, 23 ],
             "longitudes": [ 2.3510, -79.4287, -118.15, -82 ]
         } ],
@@ -36,27 +38,31 @@ var map = AmCharts.makeChart( "chartdiv", {
             "svgPath": targetSVG,
             "title": "Store, Paris",
             "latitude": 48.8567,
-            "longitude": 2.3510
+            "longitude": 2.3510,
+            "color": "#ffffff"
         }, {
             "svgPath": targetSVG,
             "title": "Office, Toronto",
             "latitude": 43.8163,
-            "longitude": -79.4287
+            "longitude": -79.4287,
+            "color": "#ffffff"
         }, {
             "svgPath": targetSVG,
             "title": "Production, Los Angeles",
             "latitude": 34.3,
-            "longitude": -118.15
+            "longitude": -118.15,
+            "color": "#ffffff"
         }, {
             "svgPath": targetSVG,
             "title": "Woodery, Havana",
             "latitude": 23,
-            "longitude": -82
+            "longitude": -82,
+            "color": "#ffffff"
         }, {
             "svgPath": planeSVG,
             "positionOnLine": 0,
-            "color": "#000000",
-            "alpha": 0.1,
+            "color": "#ffffff",
+            "alpha": 0,
             "animateAlongLine": true,
             "lineId": "line2",
             "flipDirection": true,
@@ -66,36 +72,39 @@ var map = AmCharts.makeChart( "chartdiv", {
         }, {
             "svgPath": planeSVG,
             "positionOnLine": 0,
-            "color": "#000000",
+            "color": "#ffffff",
             "animateAlongLine": true,
             "lineId": "line1",
             "flipDirection": true,
             "loop": true,
             "scale": 0.03,
-            "positionScale": 1.8
+            "positionScale": 1.8,
+            "alpha": 1
         } ]
     },
 
     "areasSettings": {
-        "unlistedAreasColor": "#303030"
+        "unlistedAreasColor": "#000000",
+        "alpha": 1
     },
 
     "imagesSettings": {
-        "color": "#303030",
-        "rollOverColor": "#303030",
-        "selectedColor": "#303030",
+        "color": "#ffffff",
+        "rollOverColor": "#ffffff",
+        "selectedColor": "#ffffff",
         "pauseDuration": 0.2,
         "animationDuration": 2.5,
-        "adjustAnimationSpeed": true
+        "adjustAnimationSpeed": true,
+        "alpha": 1
     },
 
     "linesSettings": {
-        "color": "#303030",
-        "alpha": 0.4
+        "color": "#ffffff",
+        "alpha": 1
     },
 
     "export": {
-        "enabled": true
+        "enabled": false
     }
 
 } );

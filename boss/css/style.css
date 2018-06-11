@@ -461,14 +461,16 @@ h1 {
         position: relative;
     }
     /*/////MAKING////////////////////////////////////////////////////////*/
-
+    .making{
+        background-image: url("../images/content/making/bg.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
     .makecats{
         height: 50%;
         width: 100%;
         margin-top: -20px;
-        background-image: url("../images/content/making/bg.jpg");
-        background-size: cover;
-        background-position: center;
+
     }
     .makecats .bg{
         background: rgba(255,255,255,0.8);
@@ -522,14 +524,13 @@ h1 {
     }
     /*/////MAKING////////////////////////////////////////////////////////*/
     /*/////CONTACT///////////////////////////////////////////////////////*/
-    .impress,
-    .form{
-        width: 50vw;
-        height: 100vh;
-        float: left;
+    .contact{
+        background-image: url("../images/content/contact/bg.jpg");
+        background-size: cover;
+        background-position: center;
     }
     .impress{
-        background-image: url("../images/content/contact/bgl.jpg");
+        background-image: url("../images/content/making/bg.jpg");
         background-size: cover;
         background-position: right;
     }
@@ -556,6 +557,70 @@ h1 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 160%;
+    }
+    form{
+        padding: 20px;
+    }
+    .vorname,
+    .plz{
+        padding-right: 5px;
+    }
+    .kontaktperson,
+    .city{
+        padding-left: 5px;
+    }
+    .vorname,
+    .kontaktperson,
+    .plz,
+    .city{
+        float: left;
+        width: calc(50% - 5px);
+    }
+    form div{
+        padding-bottom: 6px;
+    }
+    form h2{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 160%;
+    }
+    form input{
+        width: 100%;
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 140%;
+        border: 1px solid black;
+    }
+    textarea{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100px;
+        max-height: 100px;
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 140%;
+        border: 1px solid black;
+        margin-bottom: 6px;
+    }
+    button{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 160%;
+        width: 100%;
+        padding:4px 0;
+        background: white;
+        border: 1px solid black;
+    }
+    button:hover{
+        color: white;
+        background-color: black;
+    }
+    .underform{
+        text-align: center;
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        font-size: 140%;
+        margin-top: 5px;
     }
     /*/////CONTACT///////////////////////////////////////////////////////*/
 }
