@@ -64,6 +64,10 @@ h4{
     right: 0;
     left: 0;
     z-index: 9999;
+    margin-bottom: -10vh;
+}
+.margetopnav{
+    margin-top: 10vh;
 }
 .logo{
     padding-top: calc(5vh - 22.5px);
@@ -87,12 +91,29 @@ h4{
     font-size: 20px;
     text-transform: uppercase;
 }
+.arrowdown{
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
 .story{
     background-color: #171515;
+    padding: 150px 0 0 0;
 }
-.story img{
+.story .img{
     width: 33%;
     float: left;
+}
+.bgimgstory{
+    margin-left: 30%;
+    width: 50%;
+    margin-right: 20%;
+    margin-top: 50px;
+    padding-bottom: 370px;
+    background-image: url("images/story.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .story .text{
     color: white;
@@ -101,6 +122,13 @@ h4{
 }
 .story .text h3{
     margin-left: 20%;
+}
+.story .kreis{
+    margin-top: -80px;
+    margin-left: 60px;
+}
+.story .kreis img{
+    width: 150px;
 }
 .story .text h4{
     width: 70%;
