@@ -38,9 +38,10 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-    $('.bgvid').click(function () {
-       $(this).toggleClass('dark');
-    });
 
+    function onPlayerReady(event) {
+        event.target.setVolume(0);
+        event.target.playVideo();
+    }
 });
 
