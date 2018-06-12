@@ -27,16 +27,6 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-
-
-
-
-
-
-
-
-
-
     var headheight = $('.navbar').height();
 
     $('.arrowdown').click(function (e) {
@@ -48,22 +38,5 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    function onPlayerReady(event) {
-        event.target.setVolume(0);
-        event.target.playVideo();
-    }
 });
 
