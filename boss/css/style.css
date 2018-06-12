@@ -565,7 +565,7 @@ h1 {
         font-weight: lighter;
         font-size: 160%;
     }
-    form{
+    .formdiv{
         padding: 20px;
     }
     .vorname,
@@ -583,15 +583,15 @@ h1 {
         float: left;
         width: calc(50% - 5px);
     }
-    form div{
+    .formdiv div{
         padding-bottom: 6px;
     }
-    form h2{
+    .formdiv h2{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 160%;
     }
-    form input{
+    .formdiv input{
         width: 100%;
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;

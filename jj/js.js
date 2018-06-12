@@ -13,7 +13,34 @@ $(document).ready(function () {
             $('.navbar').removeClass('fixed-nav');
             $('.content').removeClass('margetopnav');
         }
-    })
+    });
 
+    var heightTop = $('.bigImage').outerHeight();
+
+    $('.arrowup').click(function (e) {
+
+        var linkHref = $(this).attr('href');
+
+
+        $('html, body').animate({
+            scrollTop: $(linkHref).offset().top}, 1000);
+        e.preventDefault();
+    });
+
+    var headheight = $('.navbar').height();
+
+    $('.arrowdown').click(function (e) {
+
+        var linkHref = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(linkHref).offset().top - headheight + 1}, 1000);
+        e.preventDefault();
+    });
+
+    $('.bgvid').click(function () {
+       $(this).toggleClass('dark');
+    });
 
 });
+

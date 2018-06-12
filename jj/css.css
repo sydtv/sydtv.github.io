@@ -91,14 +91,39 @@ h4{
     font-size: 20px;
     text-transform: uppercase;
 }
+.activline{
+    height: 1px;
+    width: 120%;
+    margin-left: -10%;
+    position: relative;
+    top: -13px;
+    background: white;
+}
+.categories > ul > li:hover > .linecat{
+    height: 1px;
+    width: 120%;
+    margin-left: -10%;
+    position: relative;
+    top: -13px;
+    background: white;
+}
 .arrowdown{
     position: absolute;
-    width: 60px;
+    top: 91.7vh;
     left: calc(50% - 30px);
+}
+.arrowdownimg{
+    width: 60px;
+}
+.navbar.fixed-nav .arrowdown{
+    display: none;
+}
+.tomarg:hover{
+    margin-bottom: -1px;
 }
 .story{
     background-color: #171515;
-    padding: 150px 0 0 0;
+    padding: 50px 0 0 0;
 }
 .story .img{
     width: 33%;
@@ -159,4 +184,34 @@ h4{
 .twospal{
     margin-top: 30px;
     margin-left: 75px;
+}
+.video{
+    margin-top: 100px;
+    height: 90vh;
+}
+.video .bg{
+    height: 100px;
+    position: absolute;
+    width: 20%;
+    z-index: 3;
+    background: #171515;
+}
+.giantvideotitle{
+    font-size: 55px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 60px;
+    color: white;
+    padding-top: 20px;
+    background: transparent;
+    position: relative;
+    z-index: 3;
+}
+.ytp-chrome-top{
+    display: none;
+}
+.bgvid{
+    width: 100%;
+    height: 90vh;
+    margin-top: -9vh;
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-<div class="header">
+<div class="header" id="head">
     <div class="headerbild">
         <h2 class="gianttitle">FOOD PHILOSOPHY</h2>
         <p>Our aim is to create original, beautiful crafted food that is inspired by nature, texture,</p>
@@ -18,20 +18,29 @@
             <div class="logo"><img src="images/logo_bright.png" alt="Logo"></div>
             <nav class="categories">
                 <ul>
-                    <li>Home</li>
-                    <li>Gallery</li>
-                    <li>Menu</li>
-                    <li>Contact</li>
+                    <li class="nomarg">Home
+                        <div class="activline"></div>
+                    </li>
+                    <li class="tomarg">Gallery
+                        <div class="linecat"></div>
+                    </li>
+                    <li class="tomarg">Menu
+                        <div class="linecat"></div>
+                    </li>
+                    <li class="tomarg">Contact
+                        <div class="linecat"></div>
+                    </li>
                 </ul>
             </nav>
             <div class="clearfix"></div>
+            <a class="arrowdown" href="#story"><img src="images/arrowdown.png" alt="Arrow Down"
+                                                    class="arrowdownimg"></a>
         </div>
     </div>
 </div>
 
 <div class="content">
-    <img src="images/arrowdown.png" alt="Arrow Down" class="arrowdown">
-    <div class="story">
+    <div class="story" id="story">
         <div class="container">
             <div class="img">
                 <div class="bgimgstory"></div>
@@ -40,10 +49,14 @@
                 </div>
             </div>
             <div class="text">
-                <h3>Our story<div class="line"></div></h3>
+                <h3>Our story
+                    <div class="line"></div>
+                </h3>
 
                 <h4>What is thy bidding, my Master? Send the fleet to the far side of Endor. There it will stay until
-                    I call them for.<div class="line"></h4>
+                    I call them for.
+                    <div class="line">
+                </h4>
                 <div class="twospal">
                     <div class="leftt">
                         <p>Lorem ipsum dolor sit amet, consetetur</p>
@@ -67,18 +80,28 @@
             <div class="clearfix"></div>
         </div>
     </div>
+    <div class="video">
+        <div class="bg"></div>
+        <div class="giantvideotitle container">
+            <span>Video</span>
+        </div>
+        <div class="bgvid">
+            <iframe height="100%" width="100%" src="https://www.youtube.com/embed/6CQ7DYni7Bg?controls=0"
+                    frameborder="0"></iframe>
+        </div>
+    </div>
 
-
-    <div class="video"></div>
-    <div class="locations"></div>
 </div>
 
 <div class="footer">
-    <div class="upperfooter"></div>
+    <div class="upperfooter">
+        <span><a href="#head" class="arrowup">UUUPPP</a></span>
+    </div>
     <div class="underfooter"></div>
 </div>
 Hallo JJ<br>Hallo Tom Marley
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js.js"></script>
 </body>
 </html>
