@@ -27,6 +27,16 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+
+
+
+
+
+
+
+
+
+
     var headheight = $('.navbar').height();
 
     $('.arrowdown').click(function (e) {
@@ -37,6 +47,18 @@ $(document).ready(function () {
             scrollTop: $(linkHref).offset().top - headheight + 1}, 1000);
         e.preventDefault();
     });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     function onPlayerReady(event) {
