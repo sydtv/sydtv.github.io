@@ -1,21 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: "Times New Roman", Serif;
 }
-body{
+
+body {
     background: #171515;
 }
-.container{
+
+.container {
     margin: 0 150px;
 }
-.clearfix{
+
+.clearfix {
     float: none;
     clear: both;
 }
-h2{
+
+h2 {
     text-align: center;
     padding-top: calc(30vh - 23.5px);
     font-weight: 100;
@@ -23,31 +27,36 @@ h2{
     color: white;
     padding-bottom: 20px;
 }
-h3{
+
+h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 30px;
     text-transform: uppercase;
     color: white;
 }
-h4{
+
+h4 {
     font-weight: 100;
     font-size: 35px;
 }
-.line{
+
+.line {
     width: 5rem;
     height: 1px;
     background-color: white;
 }
-.headerbild{
-    height: 90vh;
+
+.headerbild {
+    height: calc(100vh - 100px);
     width: 100%;
     background: url("images/bgheader.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-.headerbild p{
+
+.headerbild p {
     text-align: center;
     padding: 10px;
     color: white;
@@ -55,37 +64,44 @@ h4{
     font-weight: 200;
     font-size: 20px;
 }
-.navbar{
-    height: 10vh;
+
+.navbar {
+    height: 100px;
     background: #171515;
 }
-.fixed-nav{
+
+.fixed-nav {
     position: fixed;
     width: 100%;
     top: 0;
     right: 0;
     left: 0;
     z-index: 9999;
-    margin-bottom: -10vh;
+    margin-bottom: -100px;
 }
-.margetopnav{
-    margin-top: 10vh;
+
+.margetopnav {
+    margin-top: 100px;
 }
-.logo{
+
+.logo {
     padding-top: calc(5vh - 22.5px);
     float: left;
 }
-.categories{
+
+.categories {
     float: right;
     width: 40%;
 }
-.categories ul{
+
+.categories ul {
     display: flex;
     justify-content: space-between;
     height: 10vh;
     align-items: center;
 }
-.categories ul li{
+
+.categories ul li {
     float: left;
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -93,7 +109,8 @@ h4{
     font-size: 20px;
     text-transform: uppercase;
 }
-.activline{
+
+.activline {
     height: 1px;
     width: 120%;
     margin-left: -10%;
@@ -101,7 +118,8 @@ h4{
     top: -13px;
     background: white;
 }
-.categories > ul > li:hover > .linecat{
+
+.categories > ul > li:hover > .linecat {
     height: 1px;
     width: 120%;
     margin-left: -10%;
@@ -109,29 +127,36 @@ h4{
     top: -13px;
     background: white;
 }
-.arrowdown{
-    position: absolute;
-    top: 91.7vh;
+
+.arrowdown {
+    position: relative;
+    top: calc(-5vh - 30px);
     left: calc(50% - 30px);
 }
-.arrowdownimg{
+
+.arrowdownimg {
     width: 60px;
 }
-.navbar.fixed-nav .arrowdown{
+
+.navbar.fixed-nav .arrowdown {
     display: none;
 }
-.tomarg:hover{
+
+.tomarg:hover {
     margin-bottom: -1px;
 }
-.story{
+
+.story {
     background-color: #171515;
     padding: 50px 0 0 0;
 }
-.story .img{
+
+.story .img {
     width: 33%;
     float: left;
 }
-.bgimgstory{
+
+.bgimgstory {
     margin-left: 30%;
     width: 50%;
     margin-right: 20%;
@@ -142,63 +167,77 @@ h4{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.story .text{
+
+.story .text {
     color: white;
     max-width: 66%;
     float: right;
 }
-.story .text h3{
+
+.story .text h3 {
     margin-left: 20%;
 }
-.story .kreis{
+
+.story .kreis {
     margin-top: -80px;
     margin-left: 60px;
 }
-.story .kreis img{
+
+.story .kreis img {
     width: 150px;
 }
-.story .text h4{
+
+.story .text h4 {
     width: 70%;
     margin-top: 30px;
 }
-.story .text h3 .line{
+
+.story .text h3 .line {
     margin-left: 45px;
     margin-top: 10px;
 }
-.story .text h4 .line{
+
+.story .text h4 .line {
     margin-left: 35%;
     margin-top: 20px;
 }
-.twospal p{
+
+.twospal p {
     padding-bottom: 20px;
     font-family: 'Raleway', sans-serif;
 }
-.leftt{
+
+.leftt {
     float: left;
     text-align: right;
     padding-right: 40px;
 }
-.rightt{
+
+.rightt {
     float: left;
     text-align: left;
     margin-top: -20px;
 }
-.twospal{
+
+.twospal {
     margin-top: 30px;
     margin-left: 75px;
 }
-.video{
+
+.video {
     margin-top: 100px;
     height: 70vh;
 }
-.video .bg{
+
+.video .bg {
     height: 100px;
     position: absolute;
     width: 20%;
     z-index: 3;
     background: #171515;
 }
-.giantvideotitle{
+
+.giantvideotitle {
     font-size: 55px;
     font-weight: 100;
     text-transform: uppercase;
@@ -209,17 +248,19 @@ h4{
     position: relative;
     z-index: 3;
 }
-.play{
+
+.play {
     position: relative;
     margin-left: calc(50% - 50px);
     width: 100px;
-    margin-top: 18%;
+    margin-top: calc(35vh - 50px);
     cursor: pointer;
 }
-.bgvid{
+
+.bgvid {
     width: 100%;
     height: 70vh;
-    margin-top: -8vh;
+    margin-top: -80px;
     background-image: url("images/video-thumbnail.jpg");
     background-size: cover;
     background-position: center;
@@ -227,19 +268,22 @@ h4{
     filter: brightness(0.5);
     transition: all 500ms ease-in-out;
 }
-.bgvid:hover{
+
+.bgvid:hover {
     filter: brightness(0.7);
 }
-.locations{
+
+.locations {
     margin-top: 100px;
     width: 100%;
-    height: 70vh;
 }
-.leftimgtext{
+
+.leftimgtext {
     float: left;
     width: 66%;
 }
-.bigright{
+
+.bigright {
     float: right;
     width: 20%;
     margin-right: 10%;
@@ -250,7 +294,8 @@ h4{
     background-position: center;
     margin-top: 10px;
 }
-.upperbild{
+
+.upperbild {
     padding-bottom: 260px;
     width: 40%;
     margin-left: 60%;
@@ -258,71 +303,150 @@ h4{
     background-size: cover;
     background-position: center;
 }
-.textlo{
+
+.textlo {
     margin-left: 33%;
     margin-top: 25px;
 }
-.textlo .line{
+
+.textlo .line {
     margin-left: 2.5rem;
     margin-top: 1rem;
 }
-.textlo p{
+
+.textlo p {
     padding-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     color: white;
 }
-.bitchassptags{
+
+.bitchassptags {
     width: 75%;
     margin: 30px 20% 0px 5%;
 }
-.button{
+.psmall{
+    display: none;
+}
+.button {
     border: 1px solid white;
 }
-.button span{
+
+.button span {
     font-family: 'Raleway', sans-serif;
     color: white;
     font-size: 20px;
 }
-.button{
+
+.button {
     padding: 8px 20px 0 8px;
     width: 160px;
     height: 35px;
     position: relative;
-    left: 260px;
+    left: 50%;
     top: -25px;
     cursor: pointer;
 }
-.button .line{
+
+.button .line {
     position: relative;
     top: -27px;
     left: 60px;
     width: 3rem;
     transition: all 500ms ease-in-out;
 }
-.button:hover > .line{
+
+.button:hover > .line {
     width: 5rem;
 }
-.footer{
+
+.footer {
     background-color: #18191d;
 }
-.upperfooter{
+
+.upperfooter {
     height: 100px;
 }
-.upperfooter .logo{
+
+.upperfooter .logo {
     padding-top: 29.5px;
 }
-.upperfooter .arrowupimg{
+
+.upperfooter .arrowupimg {
     position: absolute;
     width: 60px;
     left: calc(50% - 30px);
     transform: rotate(180deg);
     margin-top: 20px;
 }
-.underfooter p{
+
+.underfooter p {
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
-.underfooter{
+
+.underfooter {
     padding: 45px;
+}
+
+@media screen and (max-width: 1365px) {
+    .twospal {
+        margin-left: 0;
+    }
+
+    .twospal p {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+
+    .bitchassptags {
+        width: 96%;
+        margin: 30px 10% 0px 2%;
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    *{
+        background-attachment: scroll !important;
+        background-size: cover !important;
+    }
+    .textlo {
+        margin-left: 20%;
+    }
+    .arrowdown{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .textlo{
+        margin-left: 10%;
+    }
+    .categories {
+        width: calc(100% - 220px);
+    }
+    .rightt,
+    .leftt{
+        float: none;
+        text-align: center;
+        padding-right: 0;
+    }
+    .story .text h4{
+        width: 80%;
+    }
+    .story .kreis img {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .pbig{
+        display: none!important;
+
+    }
+    .psmall{
+        display: block!important;
+    }
 }
