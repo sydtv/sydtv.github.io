@@ -48,7 +48,7 @@ h4 {
 }
 
 .headerbild {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     width: 100%;
     background: url("images/bgheader.jpg");
     background-size: cover;
@@ -56,7 +56,8 @@ h4 {
     background-attachment: fixed;
 }
 
-.headerbild p {
+.headerbild p,
+.headerbild a{
     text-align: center;
     padding: 10px;
     color: white;
@@ -64,9 +65,15 @@ h4 {
     font-weight: 200;
     font-size: 20px;
 }
-
+.mobilelinks{
+margin-left: calc(50% - 134.1px);
+}
+.headerbild a{
+    float: left;
+    padding: 10px 0 !important;
+}
 .navbar {
-    height: 100px;
+    height: 80px;
     background: #171515;
 }
 
@@ -77,11 +84,11 @@ h4 {
     right: 0;
     left: 0;
     z-index: 9999;
-    margin-bottom: -100px;
+    margin-bottom: -80px;
 }
 
 .margetopnav {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .logo {
@@ -275,6 +282,7 @@ h4 {
 
 .locations {
     margin-top: 100px;
+    margin-bottom: 40px;
     width: 100%;
 }
 
@@ -321,8 +329,8 @@ h4 {
 }
 
 .bitchassptags {
-    width: 75%;
-    margin: 30px 20% 0px 5%;
+    width: 96%;
+    margin: 30px 10% 0px 2%;
 }
 .psmall{
     display: none;
@@ -388,7 +396,12 @@ h4 {
 .underfooter {
     padding: 45px;
 }
-
+.mobiletitle{
+    display: none;
+}
+.mobilep{
+    display: none;
+}
 @media screen and (max-width: 1365px) {
     .twospal {
         margin-left: 0;
@@ -402,10 +415,6 @@ h4 {
         margin: 0 20px;
     }
 
-    .bitchassptags {
-        width: 96%;
-        margin: 30px 10% 0px 2%;
-    }
 }
 
 @media screen and (max-width: 1111px) {
@@ -422,31 +431,40 @@ h4 {
 }
 
 @media screen and (max-width: 940px) {
-    .textlo{
-        margin-left: 10%;
+    body{
+        overflow: hidden;
     }
-    .categories {
-        width: calc(100% - 220px);
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
-    .rightt,
-    .leftt{
-        float: none;
-        text-align: center;
-        padding-right: 0;
+    .underfooter{
+        display: none;
     }
-    .story .text h4{
-        width: 80%;
+    .arrowup{
+        display: none;
     }
-    .story .kreis img {
-        width: 100px;
+    .logo{
+        margin-left: calc(50% - 100px);
     }
-}
-@media screen and (max-width: 500px) {
-    .pbig{
-        display: none!important;
+    .content{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobiletitle{
+        display: block;
+    }
+    .desktoptitle{
+        display: none;
+    }
+    .deskp{
+        display: none;
+    }
+    .mobilep{
+        display: block;
+    }
 
-    }
-    .psmall{
-        display: block!important;
-    }
 }
