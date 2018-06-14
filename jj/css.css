@@ -87,11 +87,13 @@ h4{
 }
 .categories ul li{
     float: left;
-    color: white;
+    text-transform: uppercase;
+}
+.categories a{
     font-family: 'Raleway', sans-serif;
+    color: white;
     font-weight: 200;
     font-size: 20px;
-    text-transform: uppercase;
 }
 .activline{
     height: 1px;
