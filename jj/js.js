@@ -38,6 +38,15 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
+    var heightLoc = $('.leftimgtext').height();
+
+    $('.locations').css('height', heightLoc);
+
+    $(window).resize(function () {
+        var heightLoc = $('.leftimgtext').height();
+
+        $('.locations').css('height', heightLoc);
+    })
 });
 
 
