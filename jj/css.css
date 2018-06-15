@@ -139,7 +139,7 @@ margin-left: calc(50% - 134.1px);
 
 .arrowdown {
     position: relative;
-    top: calc(-50px - 30px);
+    top: calc(-50px - 35px);
     left: calc(50% - 30px);
 }
 
@@ -403,6 +403,11 @@ margin-left: calc(50% - 134.1px);
 }
 .mobilep{
     display: none;
+}
+.viertel div{
+    width: 25%;
+    float: left;
+    height: 100px;
 }
 @media screen and (max-width: 1365px) {
     .twospal {
