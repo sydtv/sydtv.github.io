@@ -404,10 +404,37 @@ margin-left: calc(50% - 134.1px);
 .mobilep{
     display: none;
 }
+.viertel{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.menu{
+    margin-bottom: 50px;
+}
 .viertel div{
     width: 25%;
     float: left;
-    height: 100px;
+}
+
+.thirstviertel h3,
+.thirdviertel h3{
+    margin-top: 70px;
+}
+.secviertel,
+.fourthtviertel{
+    margin-top: 30px;
+}
+.secviertel h3,
+.fourthtviertel h3{
+    margin-top: 40px;
+}
+.viertel h3{
+    text-align: center;
+}
+.viertel div img{
+    width: 200px;
+    margin-left: calc(50% - 100px);
 }
 @media screen and (max-width: 1365px) {
     .twospal {
