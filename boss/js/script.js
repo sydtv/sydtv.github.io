@@ -145,14 +145,7 @@ var heightWindow = $(window).innerHeight() + "px";
 
 
     ///////////////////////////////////////////////////
-    //FORM/////////////////////////////////////////////
 
-    $('#submit').click(function () {
-       $('.formdiv').css('display', 'none')
-       $('.textsubmit').addClass('activesub');
-    });
-
-    ///////////////////////////////////////////////////
 
 
 

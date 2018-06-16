@@ -1,0 +1,10 @@
+label {
+	display: block;	
+}
+
+#fehler {
+	background-color: lightgray;
+	color: red;
+	border: 1px solid red;
+	display: none;
+}

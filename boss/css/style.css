@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-family: 'Remachine Script';
+    font-family: 'Remachine Script', sans-serif;
     font-weight: lighter;
     text-align: right;
     font-size: 50pt;
@@ -96,7 +96,7 @@ h1 {
     }
 
     .mobile .button h2 {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .topnavbar {
@@ -335,9 +335,9 @@ h1 {
         width: 30%;
         float: left;
         background: rgba(255, 255, 255, 0.6);
-        -webkit-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
-        -moz-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
-        box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71)
+        -webkit-box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
+        -moz-box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
+        box-shadow: 0 0 40px -2px rgba(0,0,0,0.71)
     }
 
     .pers .undertext {
@@ -407,7 +407,6 @@ h1 {
         opacity: 0.9;
         -webkit-transition: all 500ms;
         -moz-transition: all 500ms;
-        -ms-transition: all 500ms;
         -o-transition: all 500ms;
         transition: all 500ms;
         -webkit-filter: brightness(0.7);
@@ -446,9 +445,9 @@ h1 {
 
     .activetext {
         display: block;
-        -webkit-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
-        -moz-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
-        box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
+        -webkit-box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
+        -moz-box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
+        box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
     }
 
     .sand {
@@ -521,7 +520,7 @@ h1 {
         float: left;
     }
     .makecats .titleunder {
-        margin: 20px 0px -25px 0;
+        margin: 20px 0 -25px 0;
         background: white;
         padding: 10px 20px;
     }
@@ -565,71 +564,61 @@ h1 {
         font-weight: lighter;
         font-size: 160%;
     }
-    .formdiv{
-        padding: 20px;
+    .contact .container{
+        height: calc(100% - 100px);
+        margin-top: 100px;
     }
-    .vorname,
-    .plz{
-        padding-right: 5px;
+    .form{
+        padding: 69px 0 0 0;
     }
-    .kontaktperson,
-    .city{
-        padding-left: 5px;
+    form input{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        border: 0;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 20px;
+        padding: 3px;
     }
-    .vorname,
-    .kontaktperson,
+    .firstname,
     .plz,
-    .city{
+    .adressform,
+    .phone {
         float: left;
-        width: calc(50% - 5px);
+        width:calc(50% - 30px);
+        margin-left: 20px;
+        margin-top: 10px;
+
     }
-    .formdiv div{
+    .lastname,
+    .city,
+    .email,
+    .message{
+        width: calc(50% - 30px);
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    #syd_send{
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        cursor: pointer;
+    }
+    form{
         padding-bottom: 6px;
     }
-    .formdiv h2{
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 160%;
+    .clickable{
+        background: rgba(255,255,255, 1);
     }
-    .formdiv input{
-        width: 100%;
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 140%;
-        border: none;
-        background: rgba(255,255,255,0.6);
-    }
-    textarea{
-        min-width: 100%;
-        max-width: 100%;
-        min-height: 100px;
-        max-height: 100px;
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 140%;
-        border: none;
-        margin-bottom: 6px;
-        background: rgba(255,255,255,0.6);
-    }
-    button{
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 160%;
-        width: 100%;
-        padding:4px 0;
-        background: rgba(255,255,255,0.6);
-        border: none;
-    }
-    button:hover{
-        color: white;
-        background-color: rgba(0,0,0,0.6);
-    }
+
     .underform{
         text-align: center;
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 140%;
         margin-top: 5px;
+        position: absolute;
+        bottom: 69px;
+        left: calc(50% - 311px);
     }
 
     .submitted{
@@ -643,7 +632,6 @@ h1 {
         margin-top: -222px;
         -webkit-transition: all 500ms;
         -moz-transition: all 500ms;
-        -ms-transition: all 500ms;
         -o-transition: all 500ms;
         transition: all 500ms;
     }

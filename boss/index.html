@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Legt die Codierung fest -->
     <meta charset="UTF-8">
+
+    <!-- Verlinkt Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico"
           type="image/png">
+
+    <!-- Verlinken Touchicon für die verschiedenen Geräte -->
     <link rel="apple-touch-icon" sizes="180x180"
           href="images/icons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="152x152"
@@ -24,12 +29,26 @@
           href="images/icons/apple-touch-icon-57x57.png">
     <link rel="icon" type="image/png" sizes="192x192"
           href="images/icons/android-chrome-192x192.png">
+
+    <!-- Titel der Seite in den Meta-Tags -->
     <meta property="og:title" content="SurfSoul"/>
+
+    <!-- Beschreibung der Seite in den Meta-Tags -->
     <meta property="og:description" content="We sell premium handmade surfboards"/>
+
+    <!-- Legt den Title der Seite fest -->
     <title>SurfSoul - Premium handmade surfboards</title>
+
+    <!-- Verlinkt das CSS des jQuery Fullpage Plugins -->
     <link rel="stylesheet" href="js/jQPlugs/fullpage/jquery.fullPage.css">
+
+    <!-- Verlinkt das Custom-CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Verlinkt das CSS des Map Plugin -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+    <!-- Verlinkt die Title-Font -->
     <script>
         (function () {
             var trial = document.createElement('script');
@@ -40,14 +59,25 @@
             head.appendChild(trial);
         })();
     </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
+<!-- Packt den Head in einen DIV -->
 <div class="head">
+
+    <!-- DIV für die Navbar -->
     <div class="topnavbar cf">
+
+        <!-- Zwängt die Navbar in einen gewissen Bereich -->
         <div class="container">
+
+            <!-- Logo -->
             <div class="logo-head"><a href="#home"><img src="images/logo.png" alt="Logo"></a></div>
+
+            <!-- Navigation -->
             <nav class="main-nav">
                 <ul class="contain">
                     <li><a href="#home">Home</a></li>
@@ -58,12 +88,19 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
         </div>
+
     </div>
+
 </div>
 
+<!-- Content fängt an -->
 <div class="content">
+
+    <!-- Ab diesem DIV greift das Fullpage Plugin -->
     <div id="wrapper">
+
         <div class="bigImage section" data-anchor="home">
             <div class="container">
                 <div class="claimer">
@@ -364,47 +401,24 @@
             </div>
             <div id="chartdiv"></div>
         </div>
-        <div class="contact section" data-anchor="contact">
+        <div class="contact section" data-anchor="contact" id="contact">
             <div class="container">
-                <div class="form activeform">
-                    <div class="formdiv">
-                        <div class="vorname">
-                            <label><h2>Firstname</h2></label>
-                            <input type="text" name="vorname">
-                        </div>
-                        <div class="kontaktperson">
-                            <label><h2>Lastname</h2></label>
-                            <input type="text" name="kontaktperson" required>
-                        </div>
-                        <div class="cf"></div>
-                        <div class="email">
-                            <label><h2>E-mail</h2></label>
-                            <input type="email" name="email" required>
-                        </div>
-                        <div class="adressform">
-                            <label><h2>Adress</h2></label>
-                            <input type="text" name="adress" required>
-                        </div>
-                        <div class="plz">
-                            <label><h2>Postcode</h2></label>
-                            <input type="text" name="plz" required>
-                        </div>
-                        <div class="city">
-                            <label><h2>City</h2></label>
-                            <input type="text" name="city" required>
-                        </div>
-                        <div class="cf"></div>
-                        <div class="bemerkungen">
-                            <label><h2>Annotations</h2></label>
-                            <textarea rows="5" name="bemerkungen"></textarea>
-                        </div>
-                        <div>
-                            <button class="submitbut" id="submit">Send</button>
-                        </div>
-                    </div>
+                <div class="form">
+                    <form class="cf">
+                        <input class="firstname" type="text" placeholder="Firstname" required>
+                        <input class="lastname" type="text" placeholder="Lastname" required>
+                        <input class="plz" type="text" placeholder="Postal Code" required>
+                        <input class="city" type="text" placeholder="City" required>
+                        <input class="adressform" type="text" placeholder="Adress" required>
+                        <input class="email" type="email" placeholder="E-Mail" required>
+                        <input class="phone" type="text" placeholder="Phone" required>
+                        <input class="message" type="text" placeholder="Message" required>
+                        <input type="submit" value="Senden" id="syd_send" disabled>
+                    </form>
                     <div class="textsubmit">
                         <h2 class="submitted">Thanks for your interest. We'll answer you as soon as possible.</h2>
-                        <p class="underform">Quai de Cont 12 - Paris - +69 69 007 69 69 - <a href="">info@surfsoul.com</a></p>
+                        <p class="underform">Quai de Cont 12 - Paris - +69 69 007 69 69 - <a
+                                href="">info@surfsoul.com</a></p>
                     </div>
                 </div>
             </div>
@@ -432,6 +446,7 @@
 <script src="js/jQPlugs/worldmap/world.js"></script>
 <script src="js/jQPlugs/fullpage/jquery.fullPage.js"></script>
 <script src="js/script.js"></script>
+<script src="js/form.js"></script>
 <script>
 
     if (Modernizr.mq('(min-width: 910px)')) {
