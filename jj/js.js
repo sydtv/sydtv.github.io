@@ -1,101 +1,72 @@
 $(document).ready(function () {
 
+    //Hier wird der Abstand nach oben der Navbar in die Variable targetScrollpos gespeichert
     var targetScrollpos = $('.navbar').offset().top;
-    console.log(targetScrollpos);
 
-
+    //Wenn gescrollt wird, wird diese Function ausgelöst
     $(window).scroll(function () {
+        //Hier wird der Scroll-Abstand nach oben in der Variable scrollpos gespeichert
         var scrollpos = $(this).scrollTop();
-        if(scrollpos > targetScrollpos ){
+        //Falls die Variable scrollpos grösser als die Variable targetScrollpos ist, wird diese Function ausgelöst
+        if (scrollpos > targetScrollpos) {
+            //Der Navbar wird die Class fixed-nav gegeben
             $('.navbar').addClass('fixed-nav');
+            //Dem Content wird die Class margetopnav gegeben
             $('.content').addClass('margetopnav');
-        }else{
+        } else {
+            //Der Navbar wird die Class fixed-nav entfernt
             $('.navbar').removeClass('fixed-nav');
+            //Dem Content wird die Class margetopnav entfernt
             $('.content').removeClass('margetopnav');
         }
     });
 
-    var heightTop = $('.bigImage').outerHeight();
-
+    //Bei einem click auf die class arrowup wird diese Funcion ausgelöst
     $('.arrowup').click(function (e) {
 
+        //Hier wird die id mitgegeben, welche verlinkt wird
         var linkHref = $(this).attr('href');
 
-
+        //Scroll zu der id, welche man voher mitgegeben hat, innerhalb 1000ms
         $('html, body').animate({
             scrollTop: $(linkHref).offset().top}, 1000);
+        //Verhindert das Standartverhalten
         e.preventDefault();
     });
 
+    //Hier speichert man die Höhe der Navbar
     var headheight = $('.navbar').height();
 
+    //Bei einem click auf die class arrowdown wird diese Funcion ausgelöst
     $('.arrowdown').click(function (e) {
 
+        //Hier wird die id mitgegeben, welche verlinkt wird
         var linkHref = $(this).attr('href');
 
+        //Scroll zu der id, welche man voher mitgegeben hat, innerhalb 1000ms
         $('html, body').animate({
             scrollTop: $(linkHref).offset().top - headheight + 1}, 1000);
+        //Verhindert das Standartverhalten
         e.preventDefault();
     });
 
+    //Hier speichert man die Höhe der class leftimgtext
     var heightLoc = $('.leftimgtext').height();
 
+    //Hier gibt man der class locations die Höhe der Variable heightLOC
     $('.locations').css('height', heightLoc);
 
+    //Wenn das Fenster geändert wird, wird diese Function ausgelöst
     $(window).resize(function () {
+
+        //Hier speichert man die Höhe der class leftimgtext
         var heightLoc = $('.leftimgtext').height();
 
+        //Hier gibt man der class locations die Höhe der Variable heightLOC
         $('.locations').css('height', heightLoc);
-    });
-    $("input").on("keyup", function() {
-        syd_fill_val(this);
-        if ($(this).attr("type") === "email") {
-            syd_email_val(this);
-        }
-        if (syd_form_send()) {
-            $("#syd_send").removeAttr("disabled");
-        }
+
     });
 
-    function syd_fill_val(SY_OBJEKT) {
-        var SY_VALUE = $(SY_OBJEKT).val();
-        if (SY_VALUE === null) {
-            console.log("false");
-            return false;
-        } else {
-            console.log("true");
-            return true;
-        }
-    }
-
-    function syd_email_val(SY_OBJEKT) {
-        var SY_VALUE = $(SY_OBJEKT).val();
-        var SY_FILTER = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        if (SY_FILTER.test(SY_VALUE)) {
-            console.log("true E-Mail");
-            return true;
-        } else {
-            console.log("false E-Mail");
-            return false;
-        }
-    }
-
-    function syd_form_send() {
-        var SY_SEND = true;
-        $("body input").each(function() {
-            if ($(this).val() === "") {
-                SY_SEND = false;
-            }
-            if ($(this).attr("type") === "email") {
-                SY_SEND = syd_email_val(this);
-            }
-        });
-        return SY_SEND;
-    }
-
-    $("form").on("submit", function() {
-        alert("The formular has been sent!");
-    });
 });
 
 
