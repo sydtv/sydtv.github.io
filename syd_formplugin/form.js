@@ -1,4 +1,5 @@
 (function ($) {
+
     $("input").on("keyup", function () {
         syd_fill_val(this);
         if ($(this).attr("type") === "email") {
