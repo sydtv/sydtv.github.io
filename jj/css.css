@@ -86,9 +86,11 @@ margin-left: calc(50% - 134.1px);
     z-index: 9999;
     margin-bottom: -80px;
 }
-
+.gallery-nav.fixed-nav{
+    margin-bottom: 0;
+}
 .margetopnav {
-    margin-top: 80px !important;
+    margin-top: 160px !important;
 }
 
 .logo {
