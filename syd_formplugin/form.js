@@ -14,10 +14,8 @@
     function syd_fill_val(SY_OBJEKT) {
         var SY_VALUE = $(SY_OBJEKT).val();
         if (SY_VALUE === null) {
-            console.log("false");
             return false;
         } else {
-            console.log("true");
             return true;
         }
     }
@@ -26,10 +24,8 @@
         var SY_VALUE = $(SY_OBJEKT).val();
         var SY_FILTER = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
         if (SY_FILTER.test(SY_VALUE)) {
-            console.log("true E-Mail");
             return true;
         } else {
-            console.log("false E-Mail");
             return false;
         }
     }
