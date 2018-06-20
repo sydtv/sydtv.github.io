@@ -143,7 +143,7 @@ margin-left: calc(50% - 134.1px);
 
 .arrowdown {
     position: relative;
-    top: calc(-50px - 35px);
+    top: calc(-50px - 30px);
     left: calc(50% - 30px);
 }
 
