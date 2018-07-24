@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.cf:after {
+    content: '';
+    display: table;
+    clear: both;
+    float: none;
+}
+
+span {
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 60px;
+    color: white !important;
+}
+
+h1 span {
+    color: white !important;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgb(147, 0, 178);
+    background: -moz-linear-gradient(left, rgb(147, 0, 178) 0%, rgb(251, 20, 232) 64%);
+    background: -webkit-linear-gradient(left, rgb(147, 0, 178) 0%, rgb(251, 20, 232) 64%);
+    background: linear-gradient(to right, rgb(147, 0, 178) 0%, rgb(251, 20, 232) 64%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9300b2', endColorstr='#fb14e8', GradientType=1);
+}
+
+.main-nav {
+    width: 100%;
+    height: 0px;
+    position: fixed;
+    top: 0;
+    background: black;
+}
+
+.imagehead {
+    background: url("../images/headimg.jpg");
+    background-position: center center;
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.titlehead {
+    padding-top: 250px;
+    text-align: center;
+    color: white !important;
+}
+
+.claim {
+    padding: 20px 0;
+}
+
+.claim p {
+    color: white !important;
+}
+
+.button {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 25px;
+    background: white;
+    color: black;
+    mix-blend-mode: screen;
+    width: 100px;
+    margin-left: calc(50% - 95px);
+    padding: 15px 45px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.con1 h2 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer {
+    margin-bottom: 1000px;
+}
