@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    overflow: hidden;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: lowercase;
+    font-size: 24px;
+}
+
+.cf:after {
+    content: '';
+    display: table;
+    clear: both;
+    float: none;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.links {
+    background: white;
+    position: absolute;
+    padding: 25px 50px;
+    height: calc(100vh - 50px);
+    -webkit-box-shadow: 10px 5px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 5px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 5px 16px 0px rgba(0,0,0,0.75);
+}
