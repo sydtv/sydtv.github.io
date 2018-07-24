@@ -1,7 +1,13 @@
+/* Font Oswald wird eingebunden */
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+
+/* Font Sunflower wird eingebunden */
 @import url('https://fonts.googleapis.com/css?family=Sunflower:300,500');
+
+/* Font Iconmonstr Font wird eingebunden */
 @import url('https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css');
 
+/* Allen Elementen werden diese Atrribute gegeben */
 * {
     margin: 0;
     padding: 0;
@@ -10,25 +16,25 @@
     list-style: none;
 }
 
-::-webkit-scrollbar {
-    width: 0;
-}
-
+/* Da mit der Einbindung der Title Font ein Element angezeigt wird, blende ich diesen einfach aus */
 #mfPreviewBar {
     display: none;
 }
 
+/* Ich deaktiviere das Scrollen, damit es bei der Mobileansicht zu 100% nicht machbar ist */
 body {
     overflow-x: hidden;
 }
 
+/* Hier wird dem H1 alle Atrribute mitgegeben */
 h1 {
-    font-family: 'Remachine Script';
+    font-family: 'Remachine Script', sans-serif;
     font-weight: lighter;
     text-align: right;
     font-size: 50pt;
 }
 
+/* Der Class cf wird ein Pseudo-Element gegeben, welcher den Float auflöst */
 .cf:after {
     content: '';
     display: table;
@@ -36,10 +42,12 @@ h1 {
     float: none;
 }
 
+/* Die Class visible wird sichtbar gemacht */
 .visible {
     display: block !important;
 }
 
+/* Die Class Head wird an den oberen Rand fixiert mit einer Breite von 100% */
 .head {
     position: fixed;
     width: 100%;
@@ -48,15 +56,20 @@ h1 {
     z-index: 99999;
 }
 
+/* Ab einer Breite von 100px werden diese Atrribute wirksam */
 @media screen and (min-width: 100px) {
+
+    /* Der Body bekommt einen weissen Hintergrund */
     body {
         background-color: white;
     }
 
+    /* Der Content für den Desktop wird ausgeblendet */
     .content {
         display: none;
     }
 
+    /* Der Content für die Mobile-Ansicht wird eingeblendet */
     .mobile {
         display: block;
         position: absolute;
@@ -64,21 +77,25 @@ h1 {
         left: 0;
         right: 0;
         bottom: 0;
+        /* Dem Content wird ein Background-Image zugewiesen */
         background-image: url("../images/content/mobile/bg.jpg");
         background-size: cover;
         background-position: center;
     }
 
+    /* Der Text bekommt eine Höhe von 100% und einen weissen Hintergrund mit der Deckkraft von 0.7 */
     .mobile .text {
         height: 100%;
         background-color: rgba(255, 255, 255, 0.7);
     }
 
+    /* Der Button wird in der Höhe eingemittet */
     .mobile .butmut {
         position: relative;
         top: calc(50% - 46px);
     }
 
+    /* Dem Mobile h2 werden folgende Atrribute hinzugefügt */
     .mobile h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
@@ -86,6 +103,7 @@ h1 {
         padding-bottom: 10px;
     }
 
+    /* Dem Button wird die Breite und Höhe und sonstiges zugewiesen */
     .mobile .button {
         width: 10em;
         margin: 0 auto;
@@ -95,22 +113,27 @@ h1 {
         padding: 10px;
     }
 
+    /* Dem h2 vom Button wird der Padding-Bottom weggenommen */
     .mobile .button h2 {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
+    /*  Der Topnavbar wird einen weissen Hintergrund gegeben mit der Deckkraft 0.5 */
     .topnavbar {
         background-color: rgba(255, 255, 255, 0.5);
     }
 
+    /* Die Main Nav wird ausgeblendet */
     .main-nav {
         display: none;
     }
 
+    /* Das Logo bekommt einen Float left */
     .logo-head {
         float: left;
     }
 
+    /* Das Logo bekommt die Höhe, Breite und das Padding */
     .logo-head img {
         width: 125px;
         height: auto;
@@ -118,36 +141,48 @@ h1 {
     }
 }
 
+/* Ab einer Höhe von 100px werden diese Atrribute wirksam */
 @media screen and (min-height: 100px) {
+
+    /* Der Content für den Desktop wird ausgeblendet */
     .content {
         display: none;
     }
 
+    /* Der Content für die Mobile-Ansicht wird eingeblendet */
     .mobile {
         display: block;
     }
 }
 
+/* Ab einer Höhe von 610px und Breite von 910px werden diese Atrribute wirksam */
 @media screen and (min-width: 910px) and (min-height: 610px) {
+
+    /* Der h1 bekommt die Textgrösse von 80pt */
     h1 {
         font-size: 80pt;
     }
 
+    /* Die Mobile-Ansicht wird ausgeblendet */
     .mobile {
         display: none;
     }
 
+    /* Die Desktop-Ansicht wird ausgeblendet */
     .content {
         display: block;
     }
 
     /*/////HEAD////////////////////////////////////////////////////////////*/
+
+    /* Die Main Nav wird eingeblendet */
     .main-nav {
         display: block;
         float: right;
         padding: 0 20px 0 0;
     }
 
+    /* Die Kategorien bekommen ihre Atrribute */
     .main-nav ul li {
         float: left;
         list-style: none;
@@ -159,12 +194,15 @@ h1 {
 
     /*/////HEAD////////////////////////////////////////////////////////////*/
     /*/////BIGIMG//////////////////////////////////////////////////////////*/
+
+    /* Das Hintergrundbild wird zugewiesen */
     .bigImage {
         background-image: url("../images/content/headimg.jpg");
         background-size: cover;
         background-position: left;
     }
 
+    /* Der Text auf der ersten Section bekommt diese Atrribute */
     .bigImage p {
         text-align: right;
         font-family: 'Sunflower', sans-serif;
@@ -172,10 +210,12 @@ h1 {
         margin-top: -25px;
     }
 
+    /* Der Claimer bekommt einen Abstand auf der rechten Seite */
     .bigImage .claimer {
         margin-right: 20px;
     }
 
+    /* Die Linie wird gestylt */
     .bigImage .hoehe {
         height: 180px;
         width: 2px;
@@ -184,24 +224,29 @@ h1 {
         float: right;
     }
 
+    /* Der Text bekommt einen rechten Abstand */
     .bigImage .text {
         padding-right: 20px;
     }
 
     /*/////BIGIMG//////////////////////////////////////////////////////////*/
     /*/////COMPANY/////////////////////////////////////////////////////////*/
+
+    /* Der Sektion Company wird ein Hintergrundbild zugewiesen */
     .company {
         background-image: url("../images/content/company/company.jpg");
         background-size: cover;
         background-position: right;
     }
 
+    /* Der Div bekommt eine Breite von 45% und wird left gefloatet und bekommt links einen Abstand von 20px */
     .wrap div {
         max-width: 45%;
         float: left;
         left: 20px !important;
     }
 
+    /* Dem Akkordion werden folgende Atrribute zugewiesen */
     .acord {
         position: absolute;
         width: calc(100% - 40px);
@@ -212,19 +257,23 @@ h1 {
         right: 0;
     }
 
+    /* Der h2 bekommt einen weissen Hintergrund  */
     .acord li span h2 {
         background-color: white;
     }
 
+    /* Der Titler bekommt folgende Atrribute */
     .titler {
         position: absolute;
         top: 80px;
         height: 35px;
         width: calc(100% - 40px);
         background: white;
+        /* Der Titler wird eingemittet */
         left: calc(50% - 45%);
     }
 
+    /* Das Akkordeon bekommt folgende Atrribute */
     .titlerac {
         height: 35px;
         width: 100%;
@@ -232,6 +281,7 @@ h1 {
         cursor: pointer;
     }
 
+    /* Das Icon zum Aufklappen vom Akkordeon bekommt folgende Atrribute und eine Verzögerung von 250ms */
     .titlerac svg {
         float: right;
         margin-top: -37px;
@@ -239,10 +289,12 @@ h1 {
         transition: all 250ms ease-in-out;
     }
 
+    /* Wenn das Icon die Klasse active hat wird es um 90 Grad gedreht */
     .titlerac.active svg {
         transform: rotate(90deg);
     }
 
+    /* Das gedroppte Akkordeon bekommt folgende Atrribute und einen weissen Hintergrund mit der Deckkraft von 0.6 */
     .dropacc {
         display: none;
         background: rgba(255, 255, 255, 0.6);
@@ -250,18 +302,21 @@ h1 {
         width: calc(100% - 20px);
     }
 
+    /* Der Text bekommt folgende Eigenschaften */
     .dropacc p {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         padding: 10px;
     }
 
+    /* Den h2-Elementen werden folgende Atrribute zugewiesen */
     .titler h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         margin: 2px 0 0 10px;
     }
 
+    /* Den h2-Elementen werden folgende Atrribute zugewiesen */
     .titlerac h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
@@ -269,6 +324,7 @@ h1 {
         margin: 5px 0;
     }
 
+    /* Die class cardimg bekommt folgende Atrribute und einen weissen Hintergrund mit der Deckkraft von 0.6 */
     .cardimg {
         position: absolute;
         top: 115px;
@@ -277,41 +333,48 @@ h1 {
         width: calc(100% - 40px);
     }
 
+    /* Die class cardimg bekommt folgende Atrribute */
     .cardimg .text {
         display: none;
         max-width: calc(100% - 40px);
     }
 
+    /* Der Text der class cardimg bekommt folgende Atrribute */
     .cardimg .text p {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         padding: 10px;
     }
 
+    /* Die img's der class cardimg bekommt folgende Atrribute mit der Deckkraft 0.6 */
     .cardimg img {
         width: calc(100% - 20px);
         display: none;
         position: relative;
         padding: 10px;
-        opacity: 0.60000002384185791015625;
+        opacity: 0.6;
     }
 
     /*/////COMPANY/////////////////////////////////////////////////////////*/
     /*/////TEAM////////////////////////////////////////////////////////////*/
+    /* Die class team bekommt ein Hintergrundbild */
     .team {
         background-image: url("../images/content/team/bg.jpg");
         background-size: cover;
         background-position: center bottom;
     }
 
+    /* Die class wrapperteam bekommt die Breite von 100% */
     .wrapperteam {
         width: 100%;
     }
 
+    /* Die class titleunder bekommt den Abstand von 20px */
     .titleunder {
         margin: 20px;
     }
 
+    /* Die class underline bekommt folgende Atrribute */
     .titleunder .underline {
         width: 5rem;
         height: 2px;
@@ -319,32 +382,37 @@ h1 {
         margin: 2px 0 0 0;
     }
 
+    /* Den h2-Elementen werden folgende Atrribute zugewiesen */
     .titleunder h2 {
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 180%;
     }
 
+    /* Die class persons bekommt einen linken Abstand und alle Elemente darin werden auf die volle Breite verteilt */
     .persons {
         margin-left: 20px;
         display: flex;
         justify-content: space-between;
     }
 
+    /* Die class pers bekommt folgende Atrribute und einen Schlagschatten */
     .pers {
         width: 30%;
         float: left;
         background: rgba(255, 255, 255, 0.6);
-        -webkit-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
-        -moz-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
-        box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71)
+        -webkit-box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
+        -moz-box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
+        box-shadow: 0 0 40px -2px rgba(0,0,0,0.71)
     }
 
+    /* Die class undertext bekommt folgende Atrribute */
     .pers .undertext {
         padding: 10px;
         background-color: white;
     }
 
+    /* Der text der class undertext bekommt folgende Atrribute */
     .pers .undertext p {
         text-align: center;
         font-family: 'Sunflower', sans-serif;
@@ -352,12 +420,14 @@ h1 {
         font-size: 20px;
     }
 
+    /* Die img's der class persimg bekommt folgende Atrribute */
     .persimg img {
         width: calc(100% - 20px);
         padding: 10px 10px 5px 10px;
         opacity: 0.9;
     }
 
+    /* Wenn die Bilder gehovert werden, bekommen sie eine Deckkraft von 100% */
     .pers1 img:hover,
     .pers2 img:hover,
     .pers3 img:hover {
@@ -366,12 +436,14 @@ h1 {
 
     /*/////TEAM////////////////////////////////////////////////////////////*/
     /*/////PRODUCTS////////////////////////////////////////////////////////*/
+    /* Die class products bekommt ein Hintergrundbild */
     .products {
         background-image: url("../images/content/boards/bg.jpg");
         background-size: cover;
         background-position: bottom center;
     }
 
+    /* Die class boards bekommt folgende Atrribute */
     .boards {
         height: 100vh;
         width: 60%;
@@ -382,16 +454,19 @@ h1 {
         justify-content: flex-end;
     }
 
+    /* Den li's der Class boards werden folgende Atrribute gegeben */
     .boards li {
         float: left;
         margin-right: -45px;
         margin-bottom: 75px;
     }
 
+    /* Dem letzten li der class boards wird der rechte Abstand entfernt */
     .boards li:last-child {
         margin-right: 0;
     }
 
+    /* Die class activeboard bekommt bekommt folgende Atrribute und eine normale Helligkeit */
     .activeboard {
         width: 130px !important;
         opacity: 1 !important;
@@ -400,6 +475,7 @@ h1 {
         filter: brightness(1)!important;
     }
 
+    /* Den Img's werden folgende Atrribute und eine Verzögerung von 500ms gegeben */
     .boards img {
         width: 122px;
         position: relative;
@@ -407,7 +483,6 @@ h1 {
         opacity: 0.9;
         -webkit-transition: all 500ms;
         -moz-transition: all 500ms;
-        -ms-transition: all 500ms;
         -o-transition: all 500ms;
         transition: all 500ms;
         -webkit-filter: brightness(0.7);
@@ -415,7 +490,7 @@ h1 {
     }
 
 
-
+    /* Den h2-Elementen werden folgende Atrribute zugewiesen */
     .btext h2 {
         background-color: white;
         padding: 10px;
@@ -424,6 +499,7 @@ h1 {
         font-size: 180%;
     }
 
+    /* Der text in der class btext bekommt folgende Atrribute und einen weissen Hintergrund mit der Deckkraft von 0.6 */
     .btext p {
         background: rgba(255, 255, 255, 0.6);
         padding: 10px;
@@ -432,6 +508,7 @@ h1 {
         font-size: 20px;
     }
 
+    /* Folgende Klassen bekommen diese Atrribute und werden in der Höhe eingemittet */
     .bt1,
     .bt2,
     .bt3,
@@ -444,13 +521,15 @@ h1 {
         z-index: 1;
     }
 
+    /* Die class activetext wird sichtbar und bekommt einen Schlagschatten */
     .activetext {
         display: block;
-        -webkit-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
-        -moz-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
-        box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
+        -webkit-box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
+        -moz-box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
+        box-shadow: 0 0 40px -2px rgba(0,0,0,0.71);
     }
 
+    /* Die class sandbode bekommt folgende Atrribute */
     .sand {
         height: 200px;
         position: absolute;
@@ -459,223 +538,258 @@ h1 {
         z-index: 3;
     }
 
+    /* Die class sandbode bekommt bekommt folgende Atrribute */
     .sandbode {
         width: 100vw;
         height: 200px;
         position: relative;
     }
     /*/////MAKING////////////////////////////////////////////////////////*/
+
+    /* Die class making bekommt ein Hintergrundbild */
     .making{
         background-image: url("../images/content/making/bg.jpg");
         background-size: cover;
         background-position: bottom;
     }
+
+    /* Die Class makecats bekommt folgende Atrribute */
     .makecats{
         height: 50%;
         width: 100%;
         margin-top: -20px;
-
     }
+
+    /* Die Class underline bekommt einen weissen Hintergrund mit der Deckkraft 0.8 und einen Schlagschatten */
     .makecats .bg{
         background: rgba(255,255,255,0.8);
         -webkit-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
         -moz-box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
         box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.71);
     }
+
+    /* Der container in der class makecats wird eingemittet */
     .makecats .container{
         position: relative;
         top: calc(50% - 111px);
     }
+
+    /* Die Icons in der Class catsmats bekommen folgende Atrribute */
     .catsmats svg{
         float: left;
         width: 45px;
     }
+
+    /* Den h2-Elementen werden folgende Atrribute zugewiesen */
     .catsmats h2{
         padding: 10px;
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 160%;
     }
+
+    /* Die Class underline bekommt folgende Atrribute */
     .catsmats .underline {
         width: 5rem;
         height: 2px;
         background-color: black;
         margin: 2px 0 15px 0;
     }
+
+    /* Die Class catsmats bekommt folgende Atrribute */
     .catsmats{
         margin: 40px 20px;
+
+        /* Die nächsten zwei Atrribute verteilen alle Elemente gleichmässig auf die volle Breite */
         display: flex;
         justify-content: space-between;
+
         padding: 20px 0;
     }
+
+    /* Diese Elemente bekommen einen linken float  */
     .store,
     .office,
     .production,
     .woodery{
         float: left;
     }
+
+    /* Diese h2-Elemente bekommen einen linken float */
     .store h2,
     .office h2,
     .production h2,
     .woodery h2{
         float: left;
     }
+
+    /* Die class titleunder bekommt folgende Atrribute */
     .makecats .titleunder {
-        margin: 20px 0px -25px 0;
+        margin: 20px 0 -25px 0;
         background: white;
         padding: 10px 20px;
     }
+
+    /* Die Karte hat die Hälfte der Höhe des Fensters */
     #chartdiv {
         width: 100%;
         height: 50%;
     }
     /*/////MAKING////////////////////////////////////////////////////////*/
     /*/////CONTACT///////////////////////////////////////////////////////*/
+
+    /* Die class contact bekommt ein hintergrundbild */
     .contact{
         background-image: url("../images/content/contact/bg.jpg");
         background-size: cover;
         background-position: center;
     }
-    .impress{
-        background-image: url("../images/content/making/bg.jpg");
-        background-size: cover;
-        background-position: right;
-    }
+
+
+    /* Die Class wird in der Höhe eingemittet */
     .daten{
         margin-top: calc(50% - 86px);
     }
+
+    /* Der Class adress wird ein linker und ein rechter Abstand von je 20px gegeben und ein weisser Hintergrund mit der Deckkraft 0.8 */
     .adress{
         margin: 0 20px;
         background: rgba(255,255,255,0.8);
     }
+
+    /* Der class title wird ein weisser Hintergrund gegeben und einen Padding von 10px */
     .adress .title{
         background: white;
         padding: 10px;
     }
+
+    /* Den h2-Elementen werden folgende Atrribute gegeben */
     .adress .title h2{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 180%;
     }
+
+    /* Die Class beschr bekommt einen oberen Padding von 10px */
     .beschr{
         padding: 10px;
     }
+
+    /* Den h2-Elementen werden diese Atrribute gegeben */
     .adress h2{
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 160%;
     }
-    .formdiv{
-        padding: 20px;
+
+    /* Der Container in der Klasse Contact bekommt einen oberen Abstand von 100px und eine Höhe von 100% - 100px */
+    .contact .container{
+        height: calc(100% - 100px);
+        margin-top: 100px;
     }
-    .vorname,
-    .plz{
-        padding-right: 5px;
+
+    /* Die Class form bekommt einen oberen Padding von 69px */
+    .form{
+        padding: 69px 0 0 0;
     }
-    .kontaktperson,
-    .city{
-        padding-left: 5px;
+
+    /* Den Inputfeldern werden folgende Atrribute und einen weissen Hintergrund mit der Deckkraft von 0.6 gegeben */
+    form input{
+        font-family: 'Sunflower', sans-serif;
+        font-weight: lighter;
+        border: 0;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 20px;
+        padding: 3px;
     }
-    .vorname,
-    .kontaktperson,
+
+    /* Die linken Inputfelder bekommen folgende Atrribute */
+    .firstname,
     .plz,
-    .city{
+    .adressform,
+    .phone {
         float: left;
-        width: calc(50% - 5px);
+        width:calc(50% - 30px);
+        margin-left: 20px;
+        margin-top: 10px;
+
     }
-    .formdiv div{
+
+    /* Die rechten Inputfelder bekommen folgende Atrribute */
+    .lastname,
+    .city,
+    .email,
+    .message{
+        width: calc(50% - 30px);
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    /* Der Button bekommt folgende Atrribute */
+    #syd_send{
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        cursor: pointer;
+    }
+
+    /* Das Formular bekommt einen unteren Padding von 6px */
+    form{
         padding-bottom: 6px;
     }
-    .formdiv h2{
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 160%;
+
+    /* Wenn der Input Clickable ist, bekommt er einen weissen Hintergrund mit der Deckkraft 1 */
+    .clickable{
+        background: rgba(255,255,255, 1);
     }
-    .formdiv input{
-        width: 100%;
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 140%;
-        border: none;
-        background: rgba(255,255,255,0.6);
-    }
-    textarea{
-        min-width: 100%;
-        max-width: 100%;
-        min-height: 100px;
-        max-height: 100px;
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 140%;
-        border: none;
-        margin-bottom: 6px;
-        background: rgba(255,255,255,0.6);
-    }
-    button{
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 160%;
-        width: 100%;
-        padding:4px 0;
-        background: rgba(255,255,255,0.6);
-        border: none;
-    }
-    button:hover{
-        color: white;
-        background-color: rgba(0,0,0,0.6);
-    }
+
+    /* Der Klasse underform werden folgende Atrribute gegeben */
     .underform{
         text-align: center;
         font-family: 'Sunflower', sans-serif;
         font-weight: lighter;
         font-size: 140%;
         margin-top: 5px;
+        position: absolute;
+        bottom: 69px;
+        /* Die Klasse wird hiermit eingemittet */
+        left: calc(50% - 311px);
     }
 
-    .submitted{
-        font-family: 'Sunflower', sans-serif;
-        font-weight: lighter;
-        font-size: 160%;
-        text-align: center;
-        display: none;
-    }
-    .activesub{
-        margin-top: -222px;
-        -webkit-transition: all 500ms;
-        -moz-transition: all 500ms;
-        -ms-transition: all 500ms;
-        -o-transition: all 500ms;
-        transition: all 500ms;
-    }
-    .activesub .submitted{
-        display: block !important;
-    }
     /*/////CONTACT///////////////////////////////////////////////////////*/
 }
 
+/* Ab einer Breite von 1100px werdem diese Atrribute wirksam */
 @media screen and (min-width: 1100px) {
+
+    /* Der Container bekommt eine Breite von 1100px und wird eingemittet */
     .container {
         max-width: 1100px;
         margin: 0 auto;
         position: relative;
     }
 
+    /* Der Container in der Sektion Company wird 400 Pixel höher positioniert */
     .company .container {
         top: -400px;
     }
 
+    /* Dem Text wird die Textgrösse von 23px zugewiesen */
     .company.cardimg .text p {
         font-size: 23px;
     }
 
+    /* Die Boards bekommen eine Breite von 140px */
     .boards img {
         width: 140px;
     }
 
+    /* Das aktive Board bekommt eine Breite von 150px */
     .activeboard {
         width: 150px !important;
     }
 
+    /* Dem Container im Div Daten wird eine Breite von 550px und einen linken Abstand von 100% - 550px gegeben */
     .daten .container{
         max-width: 550px;
         margin-left: calc(100% - 550px);

@@ -86,11 +86,15 @@ margin-left: calc(50% - 134.1px);
     z-index: 9999;
     margin-bottom: -80px;
 }
-
-.margetopnav {
-    margin-top: 80px;
+.gallery-nav.fixed-nav{
+    margin-bottom: 0;
 }
-
+.margetopnav {
+    margin-top: 80px !important;
+}
+.gallery.margetopnav {
+    margin-top: 160px !important;
+}
 .logo {
     padding-top: calc(5vh - 22.5px);
     float: left;
@@ -110,11 +114,13 @@ margin-left: calc(50% - 134.1px);
 
 .categories ul li {
     float: left;
-    color: white;
+    text-transform: uppercase;
+}
+.categories a{
     font-family: 'Raleway', sans-serif;
+    color: white;
     font-weight: 200;
     font-size: 20px;
-    text-transform: uppercase;
 }
 
 .activline {
@@ -402,6 +408,106 @@ margin-left: calc(50% - 134.1px);
 .mobilep{
     display: none;
 }
+.viertel{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.menu{
+    margin-bottom: 50px;
+}
+.viertel div{
+    width: 25%;
+    float: left;
+}
+
+.thirstviertel h3,
+.thirdviertel h3{
+    margin-top: 70px;
+}
+.secviertel,
+.fourthtviertel{
+    margin-top: 30px;
+}
+.secviertel h3,
+.fourthtviertel h3{
+    margin-top: 40px;
+}
+.viertel h3{
+    text-align: center;
+}
+.viertel div img{
+    width: 200px;
+    margin-left: calc(50% - 100px);
+}
+.gallery{
+    margin: 90px 0;
+}
+.gallery section{
+    width: 25%;
+    float: left;
+    margin-bottom: 20px;
+
+}
+
+.gallery section img{
+    width: 200px;
+    margin-left: calc(50% - 100px);
+    margin-bottom: 10px;
+}
+.contact{
+    margin: 50px 0 0 0;
+}
+.adressright{
+    width: calc(50% - 0.5px);
+    float: right;
+}
+.textadd{
+    margin-left: 20px;
+}
+.textadd h3,
+.textadd a{
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
+    font-size: 25px;
+    text-align: left;
+    color: white;
+}
+.contact .container{
+    margin-bottom: 50px;
+}
+form{
+    width: calc(50% - 0.5px);
+    float: left;
+}
+.linehoch{
+    float: left;
+    height: 232px;
+    width: 1px;
+    background-color: white;
+}
+form input{
+    width: calc(100% - 20px);
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    padding: 5px 0 5px 5px;
+    margin: 5px 20px 0 0;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#syd_send{
+    width: calc(100% - 20px);
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 0px;
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 1365px) {
     .twospal {
         margin-left: 0;
