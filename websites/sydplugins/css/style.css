@@ -50,15 +50,45 @@ p {
 
 .main-nav {
     width: 100%;
-    height: 0px;
-    position: fixed;
     top: 0;
-    background: black;
+    display: block!important;
 }
 
-.fixedHead {
-    height: 100px;
-    z-index: 999999;
+
+.main-nav nav ul,
+.con-nav nav ul{
+    float: right;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav nav ul li a{
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 25px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.con-nav nav ul li a{
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 25px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.fixed-nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
+    z-index: 9999;
+    margin-bottom: -84px;
 }
 
 .imagehead {
@@ -106,10 +136,8 @@ p {
 }
 
 .con1{
-    padding-top: 100px;
-    padding-bottom: 1000px;
+    padding-top: 50px;
 }
-
 
 .con1 h2 {
     font-weight: 200;
@@ -117,3 +145,7 @@ p {
     font-size: 30px;
 }
 
+.con2,
+.con3{
+    padding: 200px 0;
+}
