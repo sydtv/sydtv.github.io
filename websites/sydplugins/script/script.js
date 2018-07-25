@@ -1,23 +1,41 @@
+// Parallax
+function parallax() {
+    var scrollpos = $(this).scrollTop();
+    var headheight = $('.header').height();
+
+    console.log(scrollpos);
+    console.log(headheight);
+
+    $('.restof').css('top', ('-'+scrollpos*0.7)+'px');
+    $('.restof').css('margin-top', headheight);
+}
+
+
+// Sticky Nav
+function stickyNav() {
+    var targetScrollpos = $('.content').offset().top;
+    var heightNav = $('.main-nav').height();
+    var scrollpos = $(this).scrollTop();
+    if (scrollpos > targetScrollpos*0.7) {
+        $('.main-nav').addClass('fixedHead').slideDown();
+    } else {
+        $('.main-nav').slideUp();
+    }
+}
+
+
 (function ($) {
 
-    var targetScrollpos = $('.content').offset().top;
+    $(window).scroll(function () {
+        stickyNav();
+        parallax();
+    });
 
-    function test() {
-        $(window).scroll(function () {
-            var scrollpos = $(this).scrollTop();
-            if (scrollpos > targetScrollpos) {
-                $('.main-nav').css('height', '100px');
-                $('.main-nav').slideDown();
-                console.log('Hello');
-            } else {
-                $('.main-nav').slideUp();
-                console.log('Bye');
+    $(window).resize(function () {
+        parallax();
+    });
 
-            }
-        });
-    }
-    test();
-
-
+    parallax();
+    stickyNav();
 
 }(jQuery));

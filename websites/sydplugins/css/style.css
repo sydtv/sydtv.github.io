@@ -56,6 +56,11 @@ p {
     background: black;
 }
 
+.fixedHead {
+    height: 100px;
+    z-index: 999999;
+}
+
 .imagehead {
     background: url("../images/headimg.jpg");
     background-position: center center;
@@ -94,12 +99,21 @@ p {
     border-radius: 15px;
 }
 
+.restof {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+
+.con1{
+    padding-top: 100px;
+    padding-bottom: 1000px;
+}
+
+
 .con1 h2 {
     font-weight: 200;
     text-align: center;
     font-size: 30px;
 }
 
-.footer {
-    margin-bottom: 1000px;
-}
