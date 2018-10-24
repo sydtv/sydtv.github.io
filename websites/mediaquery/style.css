@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #f7f4f7;
+}
+
+h1 {
+    font-family: 'Baumans', cursive;
+}
+
+i {
+    font-size: 60px;
+}
+
+input {
+    font-size: 15px;
+}
+.footreg {
+    min-height: 100%;
+}
+.cf:after {
+    content: '';
+    display: table;
+    clear: both;
+    float: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid3 {
+    width: 25%;
+    float: left;
+}
+
+.grid4 {
+    width: 33%;
+    float: left;
+}
+
+.grid6 {
+    width: 50%;
+    float: left;
+}
+
+.grid8 {
+    width: 66%;
+    float: left;
+}
+
+.grid9 {
+    width: 75%;
+    float: left;
+}
+
+.grid12 {
+    width: 100%;
+    float: none;
+}
+
+.fullflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbalk {
+    background: #ff6625;
+    height: 10px;
+    width: 100%;
+}
+
+.headlog {
+    margin: 20px 0;
+}
+
+.topheader p {
+    margin-left: 40px;
+}
+
+.topheader nav {
+    width: 100%;
+    height: 100%;
+}
+
+.topheader nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.topheader nav ul li {
+    float: left;
+}
+.hamburger {
+    float: left;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: none;
+}
+.bottomheader {
+    background: #ff6625;
+    padding: 20px 0;
+}
+
+.bottomheader form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchinput {
+    margin-right: 15px;
+}
+
+.searchbutton {
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 75px;
+}
+
+.griddreier p{
+    margin-left: -35px;
+}
+.oben .grid9 {
+    margin-bottom: 15px;
+}
+hr{
+    margin: 10px 0;
+}
+
+.marglefticon {
+    display: flex;
+    justify-content: center;
+}
+
+.textcolumn {
+    margin: 60px 0;
+}
+.footer {
+    background-color: #30302C;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer .grid4 {
+    width: calc(33% - 20px);
+    margin: 20px 10px;
+    color: white !important;
+}
+.botfot {
+    background-color: black;
+    color: white !important;
+}
+.botfot p{
+    padding: 10px;
+}
+.botfot p,
+.footer p,
+.footer h2{
+    color: white !important;
+}
+@media screen and (max-width: 1250px) {
+   .content {
+       margin-top: 25px;
+   }
+    .grid4 {
+        width: calc(50% - 20px);
+        float: left;
+        margin: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    i {
+        font-size: 40px;
+    }
+    .textcolumn .grid6 {
+        width: 100%;
+    }
+    .margtop {
+        margin-top: 30px;
+    }
+    .textcolumn .grid3 {
+        width: 15%;
+    }
+    .textcolumn .grid9 {
+        width: 85%;
+    }
+    .marglefticon {
+        justify-content: left;
+    }
+    .topheader .grid6 {
+        width: 100%;
+    }
+    .footer .grid4 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .grid4 {
+        width: calc(100% - 20px);
+        float: left;
+        margin: 10px 10px;
+    }
+    .wird100 .grid3 {
+        width: 15%;
+    }
+    .wird100 .grid9 {
+        margin-left: 10%;
+    }
+    .fullflex {
+        display: block;
+    }
+    .fullflex .grid8,
+    .fullflex .grid4 {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+    .bottomheader form {
+        justify-content: flex-start;
+    }
+    .hamburger {
+        display: block;
+        border: 0 !important;
+    }
+    .grid6.fullflex nav{
+        display: none;
+        padding: 10px 0;
+    }
+}
